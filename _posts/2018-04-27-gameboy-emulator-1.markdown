@@ -42,7 +42,7 @@ This is an accurate map of the gameboy’s MMU [from this page](http://gameboy.m
 
 Jumping to the code, we can just define our memory management, basically following the areas:
 
-```C
+{% highlight C %}
 typedef struct _mmu_t
 {
 	uint8_t bios[0x100];
@@ -71,7 +71,7 @@ typedef struct _mmu_t
 	
 	uint8_t* finished_bios;
 } mmu_t;
-```
+{% endhighlight %}
 
 * `bios` will store the 256 bytes startup code. When the gameboy starts, the MMU will map it in the first 256 bytes of the memory, so that's why we need the `finished_bios` flag. And it's a pointer because it needs to be initialized pointed to position `0xFF50`.
 * `addr` is the complete addressable memory, so it's really easy to write and read from it
@@ -79,7 +79,7 @@ typedef struct _mmu_t
 
 Let's initialize (and destroy) our MMU:
 
-```C
+{% highlight C %}
 mmu_t* mmu_create()
 {
 	mmu_t* mmu = (mmu_t*)malloc(sizeof(mmu_t));
@@ -93,11 +93,11 @@ void mmu_destroy(mmu_t* mmu)
 	free(mmu);
 	mmu = NULL;
 }
-```
+{% endhighlight %}
 
 Now we need to write basic read/write functions:
 
-```C
+{% highlight C %}
 uint8_t mmu_read_addr8(mmu_t* mmu, uint16_t addr)
 {
 	if (!(*mmu->finished_bios) && addr >= 0x00 && addr <= 0xFF)
@@ -110,11 +110,11 @@ void mmu_write_addr8(mmu_t* mmu, uint16_t addr, uint8_t data)
 {	
 	mmu->addr[addr] = data;
 }
-```
+{% endhighlight %}
 
 These functions will read and write 8 bit values, but since our CPU can work with 16 bit values, our MMU also needs to be able to read and write these values:
 
-```C
+{% highlight C %}
 uint16_t mmu_read_addr16(mmu_t* mmu, uint16_t addr)
 {
 	if (!(*mmu->finished_bios) && addr >= 0x00 && addr <= 0xFF)
@@ -128,13 +128,13 @@ void mmu_write_addr16(mmu_t* mmu, uint16_t addr, uint16_t data)
 	uint16_t* pos = ((uint16_t*)(mmu->addr + addr));
 	*pos = data;
 }
-```
+{% endhighlight %}
 
 Now we can play a little bit with this code. Read and write both 8 and 16 bit values to our MMU.
 
 Let's also load the bios code:
 
-```C
+{% highlight C %}
 static uint8_t BIOS[0x100] = {
 	0x31, 0xFE, 0xFF, 0xAF, 0x21, 0xFF, 0x9F, 0x32, 0xCB, 0x7C, 0x20, 0xFB, 0x21, 0x26, 0xFF, 0x0E,
 	0x11, 0x3E, 0x80, 0x32, 0xE2, 0x0C, 0x3E, 0xF3, 0xE2, 0x32, 0x3E, 0x77, 0x77, 0x3E, 0xFC, 0xE0,
@@ -152,19 +152,21 @@ static uint8_t BIOS[0x100] = {
 	0xDD, 0xDC, 0x99, 0x9F, 0xBB, 0xB9, 0x33, 0x3E, 0x3c, 0x42, 0xB9, 0xA5, 0xB9, 0xA5, 0x42, 0x4C,
 	0x21, 0x04, 0x01, 0x11, 0xA8, 0x00, 0x1A, 0x13, 0xBE, 0x20, 0xFE, 0x23, 0x7D, 0xFE, 0x34, 0x20,
 	0xF5, 0x06, 0x19, 0x78, 0x86, 0x23, 0x05, 0x20, 0xFB, 0x86, 0x20, 0xFE, 0x3E, 0x01, 0xE0, 0x50 };
-```
+{% endhighlight %}
+
 You can also check the [complete assembly for this code here](http://gbdev.gg8.se/wiki/articles/Gameboy_Bootstrap_ROM#The_DMG_bootstrap). It's gonna be very important once we start the CPU.
 
-```C
+{% highlight C %}
 void mmu_load_bios(mmu_t* mmu)
 {
 	memcpy((void*)mmu->bios, (const void*)BIOS, sizeof(BIOS));
 	(*mmu->finished_bios) = false;
 }
-```
+{% endhighlight %}
+
 Can you believe our MMU is basically done? I mean it does almost everything the CPU needs, so we can move on to it. But before, let's play a little:
 
-```C
+{% highlight C %}
 int main(int argc, const char* argv[]) 
 {
 	mmu_t* mmu = mmu_create();
@@ -176,7 +178,7 @@ int main(int argc, const char* argv[])
 	mmu_destroy(mmu);
 	return 0;
 }
-```
+{% endhighlight %}
 
 You can check the final code at [GitHub](https://github.com/CrociDB/mygbemu). It's a bit different, but that's because I'm going by steps.
 

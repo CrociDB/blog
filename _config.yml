@@ -47,7 +47,7 @@ links:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Manaus
 future:      true
-highlighter: pygments
+#highlighter: pygments
 markdown:    kramdown
 
 kramdown:
@@ -56,8 +56,10 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   enable_coderay: false
+  input: GFM
+  syntax_highlighter: rouge
 
-yntax_highlighter_opts:
+syntax_highlighter_opts:
   line_numbers:
   line_numbers_start: 1
   tab_width: 4
