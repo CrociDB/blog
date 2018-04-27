@@ -26,7 +26,7 @@ The first version of the gameboy was released in 1989 and was based on a hardwar
 
 ## Where to start?
 
-That’s the question my programmer friends ask me when I say I’m working on an emulator. And I did that myself. You know that an emulator emulates, but emulates what? Every electronic component? What are the components? Do I need to understand the target platform from the physical level?
+That’s the question my programming friends ask me when I say I’m working on an emulator. And I did that myself. You know that an emulator emulates, but emulates what? Every electronic component? What are the components? Do I need to understand the target platform from the physical level?
 
 Well, first we need to understand that “emulation” is not “simulation”. You don’t have to implement things exactly the way they are, no need for wires or electric pulses. Remember the goal is to run a program that was made for that architecture and the results should be pretty much similar, but the way you do does not matter. For instance, the console uses a memory mapping as a bridge to connect the “video card” to the cpu, but you can make a direct call from your cpu module to the video, if the outcome is the same, you’re doing it right.
 
