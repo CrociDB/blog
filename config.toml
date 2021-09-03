@@ -1,4 +1,4 @@
-baseURL = 'http://crocidb.com/'
+baseURL = 'https://crocidb.com'
 languageCode = 'en-us'
 title = 'CrociDBlog'
 author = "Bruno Croci"
