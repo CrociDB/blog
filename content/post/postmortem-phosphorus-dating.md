@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Postmortem: Phosphorus Dating"
 description: "A quick postmortem of Phosphorus Dating, an awarded dating simulation game created for JS13K competition."
 date: 2016-10-17T08:58:51+02:00
