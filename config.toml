@@ -8,14 +8,14 @@ contentdir = "content"
 publishdir = "public"
 builddrafts = false
 canonifyurls = true
-disqusShortname = "sitename"
+disqusShortname = "crocidb"
 
 [indexes]
   category = "categories"
   tag = "tags"
 
 [params]
-  google_analytics_id = "XX-XXXXXXXX-X"
+  google_analytics_id = "UA-60594606-1"
   twitter_username = "CrociDB"
   # paginate = true
   
