@@ -1,0 +1,21 @@
+baseURL = 'http://crocidb.com/'
+languageCode = 'en-us'
+title = 'CrociDBlog'
+author = "Bruno Croci"
+
+theme = 'pixyll'
+contentdir = "content"
+publishdir = "public"
+builddrafts = false
+canonifyurls = true
+disqusShortname = "sitename"
+
+[indexes]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  google_analytics_id = "XX-XXXXXXXX-X"
+  twitter_username = "CrociDB"
+  # paginate = true
+  
