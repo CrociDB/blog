@@ -2,6 +2,9 @@
 title: "On the German R Pronunciation"
 description: "What I found out about the letter R pronunciation in German and other languages."
 date: 2021-09-03T08:58:51+02:00
+tags:
+ - notes
+ - languages
 ---
 
 I've been living in Germany now for almost one year and a half and I'm still struggling with learning the language. I moved here when the first lockdown was in place, back in April 2020, and it was really hard to make friends or even talk to people. I was limited to work colleagues through video conferences. But the official language in the office is English and most of the people in my team are not even German, which made it really complicated to actually get me started into the language. I was barely listening to enough German to get familiarized with the sounds.
@@ -16,7 +19,7 @@ It's incredible how having that concept in my mind helped me even notice the dif
 
 Turns out the *wetness* concept is actually called [**phonation**](https://en.wikipedia.org/wiki/Phonation), and we can say that the German **CH** is a *voiceless* sound, represented as an `x` or `X` in the [International Phonetic Alphabet (IPA)](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) while the **R** is a *voiced* one, represented by `ʁ`. There's actually more similar sounds that would categorize as the *same* according to my reference to **R**. And I realized that the same letter **R** in Portuguese actually produces several types of those sounds on different words, examples:
 
-| Name | Phonetic Notation | Language | Word | Phonetic Representation | Meaning |
+| Name | Not. | Language | Word | Phonetic | Meaning |
 |-|-|-|-|-|-|
 | [Voiceless velar fricative](https://en.wikipedia.org/wiki/Voiceless_velar_fricative) | `x` | German     | Bu**ch**     | `[buːx]` | book |
 |                           |   | Portuguese | a**rr**asto | `[ɐ̞ˈxastu]` | I drag |

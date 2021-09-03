@@ -2,6 +2,8 @@
 title: "Creating a GameBoy Emulator - Part 1"
 description: "Let's create a GameBoy emulator in C."
 date: 2018-04-27T08:42:35+02:00
+tags:
+ - lowlevel
 ---
 
 Some time ago I created a list of things I wanted to do as a programmer. Creating a minecraft clone, a game engine and a software renderer are some of the items sharing the list with “create an emulator”. After some talks with my good friend Kleverson at the office, he convinced me to make a Gameboy emulator. It’s not as complex as other game consoles from that time, but it’s definitely not trivial.

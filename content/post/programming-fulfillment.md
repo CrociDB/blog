@@ -2,6 +2,8 @@
 title: "Programming Fulfillment"
 description: "Programmers can get hooked on by problems and keep on it until they finally find the correct solution, no matter what."
 date: 2017-02-16T08:58:51+02:00
+tags:
+ - notes
 ---
 
 As I walk around the office, a game designer friend calls me to ask for help on a simple task he is working on. I'm working on a different project, but what's the problem on helping others, right? I hear the issue and note that I could write a quick script to do that, so I start right away, at his own workspace. Five minutes in and it's ready to test.
