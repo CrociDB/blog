@@ -10,13 +10,9 @@ You may think that 512 bytes are not enough to write a game, and it's not a bad 
 
 I confess my initial motivation to get the book was to learn some assembly and enjoy a different challange. The introduction is pretty good and the examples very well explained.  So after a third of the book, I decided to write my own game: a 2048 clone.
 
-I made a little video showing the game running from the boot sector:
+I'll describe here a little about the development of this project, but first you can [play it live](https://crocidb.github.io/retro2048/), using a x86 javascript emulator or watch the video I made:
 
 {{< youtube lexTohTMSNw >}}
-
-It's also [playable online here](https://crocidb.github.io/retro2048/), using a x86 javascript emulator.
-
-I'll describe here a little about the development of this project.
 
 ## Hello, World!
 
