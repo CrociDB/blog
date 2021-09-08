@@ -3,7 +3,7 @@ title: "On the German R Pronunciation"
 description: "What I found out about the letter R pronunciation in German and other languages."
 date: 2021-09-03T08:58:51+02:00
 tags:
- - notes
+ - thoughts
  - languages
 ---
 

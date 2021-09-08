@@ -3,7 +3,7 @@ title: "Postmortem: Phosphorus Dating"
 description: "A quick postmortem of Phosphorus Dating, an awarded dating simulation game created for JS13K competition."
 date: 2016-10-17T08:58:51+02:00
 tags:
- - games
+ - gamedev
 ---
 
 Last August started the 5th edition of the [JS13K game competition](http://js13kgames.com), where you have to create a complete game in 30 days, using javascript with 13k size budget for the whole project, including assets. I joined the competition and managed to ship a game called **Phosphorus Dating**, some kind of dating manager/simulation game. The game got the *8th place* in the **Desktop** category of the competition, and the *20th place* in the **Community Awards** category.

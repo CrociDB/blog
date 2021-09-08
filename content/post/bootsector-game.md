@@ -2,6 +2,9 @@
 title: "Writing a game for the boot sector"
 date: 2021-09-08T17:57:44+02:00
 draft: false
+tags:
+ - lowlevel
+ - gamedev
 ---
 
 I was recently exposed to the underworld of boot sector games, thanks to great book **Programming Boot Sector Games** by Oscar Toledo, aka **nanochess**. They are tiny little games, up to 512 bytes of machine code, that run on the bootsector of a disk, the space reserved for the bootloaders to initialize the operating system.
