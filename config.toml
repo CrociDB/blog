@@ -10,6 +10,11 @@ builddrafts = false
 canonifyurls = true
 disqusShortname = "crocidb"
 
+[markup]
+  [markup.goldmark]
+      [markup.goldmark.renderer]
+            unsafe = true
+
 [indexes]
   category = "categories"
   tag = "tags"
