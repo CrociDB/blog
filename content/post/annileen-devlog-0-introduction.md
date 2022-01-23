@@ -4,6 +4,7 @@ description: "Annileen is a 3D game engine created for study puroposes and I'm s
 date: 2021-10-26T08:58:51+02:00
 tags:
  - annileen
+ - annileen-devlog
  - game-engine
  - graphics-programming
 ---
@@ -37,4 +38,4 @@ I work on the project on my free time and I try to conciliate with other persona
 
 There's still a lot to talk about the features we currently have and the ones we're planning on implementing soon. I'm very open for discussion and, of course, contributions, since the project is completely opensource and is on [GitHub](https://github.com/CrociDB/annileen).
 
-
+More [Annileen Devlogs](/tags/annileen-devlog).
