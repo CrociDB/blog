@@ -1,5 +1,5 @@
 ---
-title: "Music identification in the digital era"
+title: "Music identity in the digital era"
 description: "How the digital era changed the music to be a less social and more individual experience."
 date: 2022-02-01T08:58:51+02:00
 tags:
