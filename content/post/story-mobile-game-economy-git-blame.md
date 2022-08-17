@@ -1,5 +1,5 @@
 ---
-title: "A story about a mobile game's seconomy and git blame"
+title: "A story about a mobile game's economy and git blame"
 description: "Someone broke a mobile social game economy and I had to find out who did it and why."
 date: 2022-08-16T08:58:51+02:00
 tags:
