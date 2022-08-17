@@ -1,5 +1,5 @@
 ---
-title: "A story about a mobile game economy and git blame"
+title: "A story about a mobile game's seconomy and git blame"
 description: "Someone broke a mobile social game economy and I had to find out who did it and why."
 date: 2022-08-16T08:58:51+02:00
 tags:
@@ -27,10 +27,10 @@ Yes. I was a bit embarrassed to admit it, but it was a problem with a feature I 
 
 The so-called "economy breaking" problem was that people were getting so much hard currency every day and then nobody was purchasing it anymore. 
 
-I remember the task I implemented was something like _"create a quest that gives the player X hard currency when they connect their Facebook account"_. I never worked on that game before that point (and as a matter of fact, didn't work on it after either). I skimmed in the code for the Facebook integration and there was a callback called something like `OnFacebookAccountConnect`. That sounded promising, and that's where I plugged in the trigger for the quest that I created. I tested and it worked perfectly. Committed and sent for testing. It was approved and in no time the patch was in production.
+I remember the task I implemented was something like _"create a quest that gives the player X hard currency when they connect their Facebook account"_. I never worked on that game before that point (and as a matter of fact, didn't work on it after either). I skimmed through the code for the Facebook integration and there was a callback called something like `OnFacebookAccountConnect`. That sounded promising, and that's where I plugged in the trigger for the quest that I created. I tested and it worked perfectly. Committed and sent for testing. It was approved and in no time the patch was in production.
 
 Turns out the callback wasn't for the account connection, but _authentication_. So every time you opened the app, it would auth your Facebook account and give you more hard currency.
 
-I remember the game had limited play sessions per hour, which was (and still is) a cheap way of limiting the amount of time you play at once and forcing you to come later to play more. The hard currency could buy you more chances to play. This puts the player in the decision of either playing many short sessions a day or paying for longer play sessions.
+The game had limited play sessions per hour, which was (and still is) a cheap way of limiting the amount of time you play at once and forcing you to come later to play more. The hard currency could buy you more chances to play. This puts the player in the decision of either playing many short sessions a day or paying for longer play sessions.
 
 I think I made a few people happy, even though the company made fewer bucks during that patch. It was fixed in no time, though. No major problems were caused.
