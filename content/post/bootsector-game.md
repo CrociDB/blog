@@ -1,5 +1,6 @@
 ---
 title: "Writing a game for the boot sector"
+description: "How to create a game to run on the bootsector. The whole game must have 512 bytes, but you don't need an operating system to run it."
 date: 2021-09-08T17:57:44+02:00
 draft: false
 tags:

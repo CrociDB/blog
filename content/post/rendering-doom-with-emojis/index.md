@@ -1,6 +1,6 @@
 ---
 title: "Rendering Doom With Emojis"
-description: "Programmers can get hooked on by problems and keep on it until they finally find the correct solution, no matter what."
+description: "I describe how I created a version of DOOM that is rendered with Emojis."
 date: 2022-10-06T23:33:51+02:00
 draft: false
 tags:
