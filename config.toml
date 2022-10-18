@@ -23,7 +23,7 @@ disqusShortname = "crocidb"
   description = "A blog about programming, gamedev, hacking projects, creative code, photography and my thoughts. Written by Bruno Croci."
   keywords = "programming, gamedev, hacking, coding, photography, thoughts"
   
-  google_analytics_id = "UA-60594606-1"
+  google_analytics_id = "G-E3L73E2DVK"
   twitter_username = "CrociDB"
   paginate = 10
   
