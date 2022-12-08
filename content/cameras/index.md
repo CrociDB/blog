@@ -6,6 +6,7 @@ thumb: "images/cameras.jpg"
 ---
 
 ![My analog camera collection](images/cameras.jpg)
+
 One of my main hobbies nowadays is film photography. And a big part of it is shooting with different old cameras, most of them fully mechanical. I've been collecting a few of them since I started and this page is a catalogue of my collection with basic information about each camera and my comments on them. This page will be updated every time I get a new one or have a new piece of information worth sharing.
 
 ---
