@@ -47,25 +47,67 @@ It can be played on [itch.io](https://crocidb.itch.io/spacelord-x). I stll haven
 
 ![Space Lord X's Ludum Dare Result](images/space-lord-x-results.png)
 
-## Photography Website
+## Photography Website Generator
 
+For some time I've been disappointed with all the photo platoforms, nobody uses Flickr anymore; Instagram became another tiktok and doesn't distribute your photos anymore; pretty much all the other platforms are now all about NFTs. I considered many ways I could create a photo website and ultimately decided to create a static website generator: flingern.
 
+It's still on an early stage of development, but I can already create basic websites with it:
+
+[![Photo Website](images/photography-website.png)](http://photos.crocidb.com/city.html)
+
+It's already capable of:
+
+ - importing photos and set the quality/max size for both the thumbnails and display photo
+ - generating pages from Markdown
+ - website structure is defined using a simple yaml file
+
+ Next features I want to support before calling it a proper version are:
+ 
+  - display photo exif information
+  - photo tags, so it's possible to see photos by tags and not only by pages
+  - improve the layout of the theme
+  - improve the experience using the command line client of _flingern_
+
+To be honest, dealing with HTML/CSS has been one of my worst issues here. I have worked with it on the late 2000's, but haven't really kept up to date with it, so it's always a pain for me to make page layouts. If you're into that and feel like could be a good hand, please don't hesitate to contribute to: https://github.com/CrociDB/flingern.
 
 # Photography
 
- - film photography
- - wacken - metal festival
- - German improved, but still very far 
+By the end of 2021 I was introduced to film photography and throughout the whole 2022 I pretty much only shot film. I wrote a [post about it here](https://crocidb.com/post/one-year-film-photography/) and also created a page to display my current [film camera collection](https://crocidb.com/cameras/), as it's became a very important hobby for me.
 
-Professional
+![Some photos I took this last year](https://crocidb.com/post/one-year-film-photography/images/some-photos.jpg)
+
+# Wacken Open Air - Music Festival
+
+This year I went to my first music festival ever, and it wasn't just any festival, it was Wacken Open Air, the holy land for Metal fans.
+
+This was such a unique experience. And I say that not necessarily in the best possible way, because part of it was really awful for me. I'm not used camping or being in a place with so many people for such a long time like that. I love metal concerts and even though I'm going to many of them during these years, being in there was completely overwhelming for me. As if it wasn't too much already, I was also a bit sick with a sore aching throat and coughing and completely deaf from one ear, as I'd just come back from Brazil the previous day the pressure change during landing messed my ears.
+
+Constant bathroom lines and temperature variations (it was over 30 degrees during the day but got to 5 at night) on top of that made part of my experience pretty shitty. But I'm really I was with friends that were very supporting and even if I might have ruined part of their experience, they were acknologing and helping, and that's because of them that the good part of the whole experience was actually fantastic and I also got a ticket for 2023!
+
+To my friends Thiago and Jon and my girlfriend Fredi: I am deeply sorry for ruining part of it, but thank you all very much for being understanding and making this much better than I could expect.
+
+![Wacken Crew](images/wacken-crew.jpg)
+
+# German Learning
+
+I've been living in Germany for almost three years at this point and my German is still pretty basic. I did A1/A2 German school by 2020, but after that I dropped the courses and was mostly doing duolingo and try to _learn by living_. It works when you are exposed to the language every time of every day, but I am not, even though I live in Germany. The official language in the office is English, my closest friends here are also not from Germany, so English speaking pretty much all the time.
+
+There are, of course, situations where I'm in a place with pretty much only German speakers, and I have to do it. These situations have been a little bit more common this year and I feel like my German has improved a bit because of this. I can understand a lot more than I could last year. Sometimes I even identify the words, but don't understand what they mean.
+
+For 2023 I'll try to be more active and try to read more and try to talk a lot more. I wonder if I should get a proper private teacher for some sessions a month to help me going.
+
+# Professional
+
+By the end of the year I moved positions within the company. I became now an Audio Programmer. Even though I don't have much experience with it, the Audio team embraced me and are very happy to have me learning all I can abut it.
+
  - moved to being an audio programmer 
  - working with an in-house engine 
  - programming c++
 
-Books/Tech
+# Books/Tech
  - realm of racket
 
-Books/Graphic Novels 
+# Books/Graphic Novels 
  - yellow cab
  - polina
  - la obsolescência programada de nuestros sentimientos
@@ -73,5 +115,5 @@ Books/Graphic Novels
  - ballad for Sophie
  - call me Nathan
 
-Books/Fictions
+# Books/Fictions
  - 
