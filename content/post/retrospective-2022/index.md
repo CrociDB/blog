@@ -98,22 +98,40 @@ For 2023 I'll try to be more active and try to read more and try to talk a lot m
 
 # Professional
 
-By the end of the year I moved positions within the company. I became now an Audio Programmer. Even though I don't have much experience with it, the Audio team embraced me and are very happy to have me learning all I can abut it.
+By the end of the year I moved positions within the company. I became an Audio Programmer. Even though I don't have much experience with it, the Audio team embraced me and is very happy to have me learning all I can about it and contribute to that aspect of the games.
 
- - moved to being an audio programmer 
- - working with an in-house engine 
- - programming c++
+With it came some other cool stuff: I'm now officially working with C++ and the Ubisoft engine Snowdrop. Unity has ben my main tool for almost 10 years, but always wanted to work with other engines. Finally being able to do C++ professionally is really important for me, since it's one of the first languages I ever learned and wrote for many personal projects, but could never really prove my knowledge in a big commercial project like the one I'm on right now.
 
-# Books/Tech
- - realm of racket
+On the Audio side of things, being exposed to so much content about it and working with so many extremely talented professionals (other audio programmers and audio designers) is making my day-to-day job very exciting. I learn so many new topics everyday.
 
-# Books/Graphic Novels 
- - yellow cab
- - polina
- - la obsolescência programada de nuestros sentimientos
- - exit wounds
- - ballad for Sophie
- - call me Nathan
+I don't want to write too much now because I'm planning on a post about my experiences as an Audio Programmer. Stay tunned!
 
-# Books/Fictions
- - 
+# Books
+
+I want to point just a few books that I read and liked this year. There are many of them, especially the tech ones, that I read parts, but not the whole, so I will only talk about the ones I feel I learned enough from, or that I really liked.
+
+## Tech
+
+### Realm of Racket
+
+This year I started a project of finally learning and exploring Lisp and Racket was the dialect of choice. This book is similar to the classic **Land of Lisp**, but for Racket instead. I wrote about my first small project with it, based on stuff I've learned from this book so far: [A Brainfuck Interpreter](https://crocidb.com/post/lisp-adventures-1-racket-a-brainfuck-interpreter/)
+
+I haven't finished it and I'm planning on more posts about my [Lisp Adventures](https://crocidb.com/tags/lisp/) in 2023.
+
+## Graphic Novels
+
+I've read fewer graphic novels in the last couple years, unfortunately, but some of the ones I really liked in 2022, in no particular order, were:
+
+ - **Yellow Cab, by Chabouté**: a masterpiece of visual novel. Every frame could be an amazing movie still, there's just so much to learn from a photography perspective in this book, even though I think the story itself was a bit meh and missed some motivations for the main character. The Chabouté I like the least, nonetheless, totally worth it!
+ - **Polina, by Bastien Vivès**: for the first half of the book, I was a bit confused and it didn't catch me, but I'm so glad I insisted. The art is weird, but truly amazing when you start to understand. The main character, Polina, and her teacher Bojinski have such an interesting visual representation. They're always recognizable even with just a few lines of Vivès' drawing. But I think that what stands here is the ambiguous relationship between those characters. Gave 5/5 Must Read!
+ - **La obsolescencia programada de nuestros sentimientos, by Zidrou and Aimée de Jongh**: first of all I'm really proud I read the Spanish version of this book with only a few dictionary peeks. The art is extremely beautiful and the story is absolutely beutiful.
+ - **Exit Wounds, by Rutu Modan**: simple plot, likeable characters, powerful moments. The visual narrative reminded me a bit of _Marcello Quintanilha_, another comic book artist I like.
+ - **Ballad for Sophie, by Filipe Melo and Juan Cavia**: one of the best I read this year for sure. It's all I like in a graphic novel, fantastic art, amazing characters with compelling motivations and the perfect drama mood.
+
+# Fiction
+
+ - **Capão Pecado, by Ferréz**: a cult classic of the brazilian marginalized literature. Written and set in a favela in São Paulo, this is fiction, but based on the day-to-day life of the people who lives there. I was surprised for not knowing this type of literature before. I'm really glad I picked this book first because it gave me a lot more interest for this genre and even more appreciation for it's author, Ferréz.
+-  **"All You Zombies...": Five Classic Stories, by Robert A. Heinlein**: I started reading this collection of sci-fi stories by Robert Heinlein because someone recommended the title story as a good way to understand the [Bootstrap Paradox](https://en.wikipedia.org/wiki/Causal_loop). And it was such a great story. Still looking forward for the rest of the book, but I thought that just that one was already worth of mentioning.
+- **The Gods Themselves, by Isaac Asimov**: many years ago I remember falling in love by Asimov's The End of Eternity. I read the first pat of Foundation because of it, but to be honest it didn't get me so much involved. Now, I decided to take another book by him and I was so surprised when I started reading this, because the plot is absolutely fascinating, and the way he explains the science part of it totally convinces me that it what happens there could be real. But what really cought me is when he, on the second part of the book, described another type of creature in an alternate universe, that's so incredibly creative that I couldn't stop smiling while reading that.
+
+
