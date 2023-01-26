@@ -1,8 +1,8 @@
 ---
-title: "Investigating a Touch Issue in Steam Deck"
+title: "Investigating a touch screen issue on the Steam Deck"
 description: "I bought a Steam Deck, but there was a problem with it. That's how I investigated the issue."
 date: 2023-01-26T12:33:51+02:00
-draft: true
+draft: false
 tags:
  - investigation
  - hardware
@@ -14,11 +14,11 @@ I just didn't imagine I'd have to dive in the tech part so early in, as my devic
 
 {{< youtube Bgm_YaRN5UA >}}
 
-When the keyboard is open you can clearly see how it "touches" some points around the key `.` in the keyboard. It could be an issue with the screen, nonetheless, it was time for some investigations. I turned the Deck into a desktop computer and then decided to start by disabling the touchscreen driver, to see if it would fix the problem.
+When the keyboard is open you can clearly see how it "touches" some points around the key `.` on the bottom right corner of the screen. It could be an issue with the screen, nonetheless, it was time for some investigations. I turned the Deck into a desktop computer and then decided to start by disabling the touchscreen driver, to see if it would fix the problem.
 
-The SteamOS that runs on the Deck is a distro based on Arch Linux, it comes with a plain KDE environment and can be accessed by holding the power button and select "Switch to Desktop Mode". With the help of a USB-C hub, I connected keyboard, mouse and monitor. 
+The SteamOS that runs on the Deck is a distro based on Arch Linux, it comes with a plain KDE environment and can be accessed by holding the power button and selecting "Switch to Desktop Mode". With the help of a USB-C hub, I connected keyboard, mouse and monitor. 
 
-[image of the desktop setup]
+![Steam Deck as a desktop](images/steam-deck-desktop.jpg)
 
 I don't know much about linux device management, but after a bit of research I found out about `xorg-input`, which is capable of displaying the input devices and disable/enable them. It's not installed by default, and it `pacman` didn't seem to work out of the box. According to [this support page](https://help.steampowered.com/en/faqs/view/671a-4453-e8d2-323c), in order to install packages through `pacman`, it's necessary to unlock the system. So first, change the password of the default user `deck`:
 
@@ -90,7 +90,7 @@ python3 -m ensurepip --upgrade
 python3 -m pip install -U pygame
 ```
 
-Then wrote this simple program:
+Then I wrote this simple program:
 
 ```python
 import pygame, sys
@@ -123,6 +123,6 @@ That was when I was finally able to visualize clearly what was going on and ther
 
 There was two regions in which the touches would happen:
 
-![Touch was happening in two different regions of the screen](images/deck-touch-regions.png)
+![Touch was happening in two different regions of the screen](images/deck-touch-regions.jpg)
 
 In the end I sent them both videos, the source code of the Python script and they asked me to sent the device for repair. Not long after, the Deck was back all fixed and I can finally play games on it!
