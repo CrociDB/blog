@@ -92,12 +92,42 @@ Then I created a shell script `plotprocess.sh` to help tracking it:
 
 ```shell
 #!/bin/bash
-echo "Plotting process '$2' to file '$1'..."
-$2 &P1=$!
-psrecord $(pgrep ${2%% *}) --interval 0.05 --plot $1
+$* 
+&P1=$!
+graphfile="$(date +%s).png"
+psrecord $P1 --interval 0.05 --plot $graphfile
 P2=$!
 wait $P1 $P2
-echo "Done"
+echo "Graph plot in '$graphfile'" 
 ```
 
-## Tracking 
+## Tracking
+
+I created two files with both regular and lazy racket code for the foldl:
+
+```scheme
+; foldl-naive.rkt
+#lang racket
+
+(foldl + 0 (range 1000000001))
+
+; foldl-lazy.rkt
+#lang lazy
+
+(foldl + 0 (range 1000000001))
+```
+
+So now I can track the memory usage of both of them: 
+
+```shell
+$ ./plotprocess.sh racket foldl-naive.rkt
+Attaching to process 10866
+./plotprocess.sh: line 6: 10866 Killed               $*
+Graph plot in '1680099684.png'
+
+$ ./plotprocess.sh racket foldl-lazy.rkt
+Attaching to process 10914
+./plotprocess.sh: line 6: 10914 Killed               $*
+Graph plot in '1680100084.png'
+```
+
