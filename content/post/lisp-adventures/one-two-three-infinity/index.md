@@ -60,7 +60,7 @@ Oh no. Same memory problem. But expected again, after all, the `range` function 
 ; Regular Racket version
 #lang racket
 > (range 11)
-'(0 1 2 3 4 5 6 7 8 9)
+'(0 1 2 3 4 5 6 7 8 9 10)
 
 ; Lazy version
 #lang lazy
@@ -80,7 +80,7 @@ Argh! Memory error again. Let's try to figure out why.
 
 # Tracking Memory Usage
 
-We know that the regular Racket program is consuming too much memory to a point where the interpreter is killing it. I'm gonna use [psrecord](https://github.com/astrofrog/psrecord) to track the memory of our process and plot it to a graph. It's pretty simple to run it in a debian-based system.
+We know that it is consuming too much memory to the point where the Racket interpreter is killing it. I'm gonna use [psrecord](https://github.com/astrofrog/psrecord) to track the memory of our process and plot it to a graph. It's pretty simple to run it in a debian-based system.
 
 ## Setting up psrecord
 
@@ -170,7 +170,7 @@ Until a point where it gets killed due to memory usage.
 
 ## Trying to track with Racket's `(dump-memory-stats)`
 
-Racket has a [timid set of memory management functions](https://docs.racket-lang.org/reference/garbagecollection.html) available. The `(dump-memory-stats)` function will print to the error output the memory usage at the moment. 
+Racket has a [timid set of memory diagnostics functions](https://docs.racket-lang.org/reference/garbagecollection.html) available. The `(dump-memory-stats)` function will print to the error output the memory usage at the moment. 
 
 I tried retrieveing the information at the beginning of the program execution and at the last iteration of the `lfoldl` function:
 
@@ -189,7 +189,7 @@ I tried retrieveing the information at the beginning of the program execution an
 (lfoldl + 0 (range 1000000)) ; 1000000 because it's a high enough number, but runs to the end
 ```
 
-The full output with the two dumps is [here](https://pastebin.com/xkDF5rkz). It's a bit confusing at first, but after removing the useless information (all the data that didn't change from one to the other) and comparing the two runs, we have this:
+The full output with the two dumps is [here](https://pastebin.com/xkDF5rkz). It's a bit confusing at first, but after removing the useless information (all the data that didn't change from one to the other) and comparing the two dumps, we have this:
 
 ![Memory dump beginning of program execution and last iteration](images/memory-dump.png)
 
@@ -214,23 +214,20 @@ All of these objects had an incredible growth in objects and size and are the on
 The solution for this problem is the use of [Streams](https://docs.racket-lang.org/reference/streams.html):
 
 ```scheme
-(stream-fold + 0 (in-inclusive-range 0 10000000000))
+(stream-fold + 0 (in-inclusive-range 0 1000000000))
 ```
 
-It does take quite some time to run, but it works. The principle is the same, the function `in-inclusive-range` will generate a [Sequence](https://docs.racket-lang.org/reference/sequences.html), that is lazy by default. I wrote a custom version of the `stream-fold` function but dumps the memory at the last iteration so I can have more insights on that difference from the Lazy Racket one:
+It does take quite some time to run, but it works. The principle is the same, the function `in-inclusive-range` will generate a [Sequence](https://docs.racket-lang.org/reference/sequences.html), that is lazy by default. 
 
-```scheme
-#lang racket
+The execution graph is not very impressive, the memory use is stable:
 
-(define (sfoldl f v l)
-  (if (stream-empty? l)
-      (let ()
-        (dump-memory-stats)
-        v)
-      (sfoldl f (f (stream-first l) v) (stream-rest l))))
+![Execution graph for the stream solution](images/final-execution-graph.png)
 
-(sfoldl + 0 (in-inclusive-range 0 10000000000))
-```
+I also wrote a custom version of the `stream-fold` function that dumps the memory at the last iteration so I can have more insights on that difference from the Lazy Racket one, but there's not a significant change. So I'll stop here.
+
+# Conclusion
+
+I was motivated by [this repository](https://github.com/clarkzjw/one-two-three...infinity) with several implementations of several languages on this problem. I actually had the implementation with Streams quite early, but I wanted to explore a bit more other lazy structures in Racket, and more specifically the Lazy Racket. In the end, seems like it's not as simple to use as I imagined. While I didn't really learn about the internals of the lazy implementation of Racket, I enjoyed this whole process.
 
 
 
