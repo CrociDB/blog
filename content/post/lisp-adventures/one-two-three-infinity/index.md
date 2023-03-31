@@ -6,7 +6,7 @@ tags:
  - lisp
  - racket
  - functional programming
- - algorithms
+ - investigation
 ---
 
 Imagine you want to count the sum of the numbers from **1** to **1,000,000,000** (one billion). If you come from an imperative programming background, you might be already thinking on a loop and what type integer to hold that value. You might come up with something [similar to this](https://godbolt.org/z/Gos5Tvenn) if you're writing C:
@@ -104,7 +104,7 @@ echo "Graph plot in '$graphfile'"
 
 Now we only need to call `$ ./plotprocess.sh process` to start the process and plot the memory/cpu of it.
 
-## Tracking
+## Tracking with ./plotprocess.sh
 
 I created two files with both regular and lazy racket code for the foldl:
 
@@ -134,9 +134,9 @@ Graph plot in '1680100084.png'
 
 ![Memory and CPU from the execution of the naive and lazy foldl programs](images/naive-lazy-foldl.jpg)
 
-Well, the memory usage of the process is clearly rising up to 700mb (which I don't know if it's a setting in the Racket interpreter or something in my linux server). Then it's killed. But there's an important thing to note here: the times. The naive version gets killed after around 3 seconds, whereas the lazy one goes over 10 seconds. That tells me that the lazy version actually getting something done, but is probably getting caught by the garbage collector.
+The memory usage of the process is clearly rising up to 700mb. Then it's killed. But there's an important thing to note here: the execution time. The naive version gets killed after around 3 seconds, whereas the lazy one goes over 10 seconds. That tells me that the lazy version is actually iterating over the list for some time, but bloating the stack or the heap with garbage.
 
-In fact, I decided to test it with the `trace` library that Racket provides. The only problem is it only traces custom procedures. So I had to reimplement `foldl`:
+In fact, I decided to test it with the `trace` library that Racket provides. The problem is it only traces custom procedures. So I had to reimplement `foldl`:
 
 ```scheme
 (require racket/trace)
@@ -159,34 +159,78 @@ Interactions disabled; out of memory
 > #lang lazy
 > (lfoldl + 0 (range 1000000001))
 >(lfoldl #<procedure:+> 0 '(0 . #<promise:...7/pkgs/lazy/base.rkt:299:29>))
-  <#<promise:...e/pkgs/lazy/base.rkt:364:27>
+<#<promise:...e/pkgs/lazy/base.rkt:364:27>
 >(lfoldl #<procedure:+> 0 '(1 . #<promise:...7/pkgs/lazy/base.rkt:299:29>))
-  <#<promise:...e/pkgs/lazy/base.rkt:364:27>
+<#<promise:...e/pkgs/lazy/base.rkt:364:27>
 >(lfoldl #<procedure:+> 1 '(2 . #<promise:...7/pkgs/lazy/base.rkt:299:29>))
-  <#<promise:...e/pkgs/lazy/base.rkt:364:27>
->(lfoldl #<procedure:+> 3 '(3 . #<promise:...7/pkgs/lazy/base.rkt:299:29>))
-  <#<promise:...e/pkgs/lazy/base.rkt:364:27>
->(lfoldl #<procedure:+> 6 '(4 . #<promise:...7/pkgs/lazy/base.rkt:299:29>))
-  <#<promise:...e/pkgs/lazy/base.rkt:364:27>
->(lfoldl #<procedure:+> 10 '(5 . #<promise:...7/pkgs/lazy/base.rkt:299:29>))
-  <#<promise:...e/pkgs/lazy/base.rkt:364:27>
->(lfoldl #<procedure:+> 15 '(6 . #<promise:...7/pkgs/lazy/base.rkt:299:29>))
-  <#<promise:...e/pkgs/lazy/base.rkt:364:27>
->(lfoldl #<procedure:+> 21 '(7 . #<promise:...7/pkgs/lazy/base.rkt:299:29>))
-  <#<promise:...e/pkgs/lazy/base.rkt:364:27>
->(lfoldl #<procedure:+> 28 '(8 . #<promise:...7/pkgs/lazy/base.rkt:299:29>))
-  <#<promise:...e/pkgs/lazy/base.rkt:364:27>
->(lfoldl #<procedure:+> 36 '(9 . #<promise:...7/pkgs/lazy/base.rkt:299:29>))
-  <#<promise:...e/pkgs/lazy/base.rkt:364:27>
->(lfoldl #<procedure:+> 45 '(10 . #<promise:...7/pkgs/lazy/base.rkt:299:29>))
-  <#<promise:...e/pkgs/lazy/base.rkt:364:27>
->(lfoldl #<procedure:+> 55 '(11 . #<promise:...7/pkgs/lazy/base.rkt:299:29>))
+. . .
 ```
 
-Until a point where it gets killed due to memory usage. 
+Until a point where it gets killed due to memory usage.
 
-In that case, maybe we can invoke the garbage collector at every step of the fold!
+## Trying to track with Racket's `(dump-memory-stats)`
+
+Racket has a [timid set of memory management functions](https://docs.racket-lang.org/reference/garbagecollection.html) available. The `(dump-memory-stats)` function will print to the error output the memory usage at the moment. 
+
+I tried retrieveing the information at the beginning of the program execution and at the last iteration of the `lfoldl` function:
 
 ```scheme
+#lang lazy
+
+(dump-memory-stats)
+
+(define (lfoldl f v l)
+  (if (empty? l)
+      (let ()
+        (dump-memory-stats)
+        v)
+      (lfoldl f (f (car l) v) (cdr l))))
+
+(lfoldl + 0 (range 1000000)) ; 1000000 because it's a high enough number, but runs to the end
 ```
+
+The full output with the two dumps is [here](https://pastebin.com/xkDF5rkz). It's a bit confusing at first, but after removing the useless information (all the data that didn't change from one to the other) and comparing the two runs, we have this:
+
+![Memory dump beginning of program execution and last iteration](images/memory-dump.png)
+
+I don't know exactly the difference between the two sets of columns, but I imagine the columns in them are object count and size. I'm also assuming all the sizes are in bytes.
+
+The **Current memory use** values don't really line up with the values in the `total` line. The first execution shows the memory usage to be around `51mb` and the total being `15mb`. And the second `195mb` vs `211mb`. Also those numbers are a bit off from what _psrecord_ tracked:
+
+![psrecord tracking of the process](images/dump-memory-execution.png)
+
+But that all won't keep me from looking at what changed between the two dumps. And the most important lines are:
+
+```
+ pair                   2,035,254   32,564,064  |  2,152,866   34,445,856
+ #<composable-promise49> 3,000,003  48,000,048  |  3,000,003   48,000,048
+ procedure              1,814,524  116,268,064  |  1,820,243  116,460,752
+```
+
+All of these objects had an incredible growth in objects and size and are the ones that consume the most amount of memory. `#<composable-promise49>` wasn't event present in the first dump. My assumption is that all those promises are stuck somewhere in the stack, considering that the `lazy` language is making all sorts of operations a promise, the conditional and the call to the `f` function within `lfolfl` are probably becoming promises too.
+
+# The Solution
+
+The solution for this problem is the use of [Streams](https://docs.racket-lang.org/reference/streams.html):
+
+```scheme
+(stream-fold + 0 (in-inclusive-range 0 10000000000))
+```
+
+It does take quite some time to run, but it works. The principle is the same, the function `in-inclusive-range` will generate a [Sequence](https://docs.racket-lang.org/reference/sequences.html), that is lazy by default. I wrote a custom version of the `stream-fold` function but dumps the memory at the last iteration so I can have more insights on that difference from the Lazy Racket one:
+
+```scheme
+#lang racket
+
+(define (sfoldl f v l)
+  (if (stream-empty? l)
+      (let ()
+        (dump-memory-stats)
+        v)
+      (sfoldl f (f (stream-first l) v) (stream-rest l))))
+
+(sfoldl + 0 (in-inclusive-range 0 10000000000))
+```
+
+
 
