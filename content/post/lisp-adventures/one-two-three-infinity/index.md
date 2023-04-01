@@ -1,7 +1,7 @@
 ---
 title: "Lisp Adventures #2 - One, Two, Three... Infinity"
 description: "SOMETHING HERE"
-date: 2023-03-29T08:58:51+02:00
+date: 2023-04-01T08:58:51+02:00
 tags:
  - lisp
  - lisp-adventures
