@@ -1,6 +1,6 @@
 ---
 title: "Lisp Adventures #2 - One, Two, Three... Infinity"
-description: "SOMETHING HERE"
+description: "How to count the sum of all the numbers between 1 and 1,000,000,000 (one billion) in Racket."
 date: 2023-04-01T08:58:51+02:00
 tags:
  - lisp
