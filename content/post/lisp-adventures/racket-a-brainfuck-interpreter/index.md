@@ -5,6 +5,7 @@ date: 2022-12-15T12:33:51+02:00
 draft: false
 tags:
  - lisp
+ - lisp-adventures
  - racket
  - functional-programming
 ---

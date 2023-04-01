@@ -4,12 +4,13 @@ description: "SOMETHING HERE"
 date: 2023-03-29T08:58:51+02:00
 tags:
  - lisp
+ - lisp-adventures
  - racket
- - functional programming
+ - functional-programming
  - investigation
 ---
 
-Imagine you want to count the sum of the numbers from **1** to **1,000,000,000** (one billion). If you come from an imperative programming background, you might be already thinking on a loop and what type integer to hold that value. You might come up with something [similar to this](https://godbolt.org/z/Gos5Tvenn) if you're writing C:
+Imagine you want to count the sum of the numbers from **1** to **1,000,000,000** (one billion). If you come from an imperative programming background, you might be already thinking on a loop and what number type to hold that value. You might come up with something [similar to this](https://godbolt.org/z/Gos5Tvenn) if you're writing C:
 
 ```c
 uint64_t sum = 0; 
@@ -26,7 +27,7 @@ sum(range(1,1000000001))
 
 It's more elegant and simpler. I like it. But I'm not satisfied and I want to do it in Racket:
 
-```scheme
+```racket
 (apply + (range 1000000001))
 ```
 
@@ -36,27 +37,31 @@ Since Racket doesn't have a `sum` function, I use `apply` and pass the function 
 
 It makes sense, because the `apply` function basically gets every element in the list and apply as parameters to pass to the function specified. Example:
 
-```scheme
+```racket
 (apply + (range 10))
 ```
 
 Will expand to:
 
-```scheme
+```racket
 (+ 0 1 2 3 4 5 6 7 8 9)
 ```
 
 And considering that Racket uses big numbers as the default numeric type, I can imagine that it'll take a lot of memory to expand a million values. But that's unecessary, let's try a different way, let's fold that list:
 
-```scheme
+```racket
 (foldl + 0 (range 1000000001))
 ```
 
 > `foldl` stands for `Fold Left`, it will _reduce_ the list using the _procedure_ passed in the first parameter with the _accumulator_ in the second parameter. In that example, it will call the `+` procedure with 0 and the first element in the list, then update the _accumulator_ for the next element in the list and so on.
 
-Oh no. Same memory problem. But expected again, after all, the `range` function creates a list with the numbers within that range, then we have the exact same problem as before. Which means that it's the `foldl` that is breaking our program, but the `range` itself. But what if we could make it lazy? I mean, only compute that range as we consume it? Luckily, Racket has a lazy version of it, all we need to do is set `#lang lazy` at the beginning of the code file:
+Oh no. Same memory problem. But expected again, after all, we're still using the `range` function, that creates a list with the numbers within that range. Which means that it's not the `foldl` that is breaking our program, but the `range` itself. But what if we could make it lazy? I mean, only compute that range as we consume it? 
 
-```scheme
+**Time splits here, in one timeline I went straight to the [Solution](#the-solution), in the other one I decided to explore other options:**
+
+Luckily, Racket has a lazy version of it, all we need to do is set `#lang lazy` at the beginning of the code file:
+
+```racket
 ; Regular Racket version
 #lang racket
 > (range 11)
@@ -68,13 +73,16 @@ Oh no. Same memory problem. But expected again, after all, the `range` function 
 '(0 . #<promise:...7/pkgs/lazy/base.rkt:299:29>)
 ```
 
-Okay, that looks _promising_, that uses promises! ;)
+Okay, that looks _promising_! ;) 
 
 [**Lazy Racket**](https://docs.racket-lang.org/lazy/) already provides all the basic list functions adapted to use those promises, so we can use our `foldl`, right?
 
-```scheme
+```racket
 (foldl + 0 (range 1000000001))
 ```
+
+. . .
+
 
 Argh! Memory error again. Let's try to figure out why.
 
@@ -108,7 +116,7 @@ Now we only need to call `$ ./plotprocess.sh process` to start the process and p
 
 I created two files with both regular and lazy racket code for the foldl:
 
-```scheme
+```racket
 ; foldl-naive.rkt
 #lang racket
 (foldl + 0 (range 1000000001))
@@ -138,7 +146,7 @@ The memory usage of the process is clearly rising up to 700mb. Then it's killed.
 
 In fact, I decided to test it with the `trace` library that Racket provides. The problem is it only traces custom procedures. So I had to reimplement `foldl`:
 
-```scheme
+```racket
 (require racket/trace)
 
 (define (lfoldl f v l)
@@ -151,7 +159,7 @@ In fact, I decided to test it with the `trace` library that Racket provides. The
 
 Now running it for both regular racket and lazy racket gets me me this:
 
-```scheme
+```racket
 > #lang racket
 > (lfoldl + 0 (range 1000000001))
 Interactions disabled; out of memory
@@ -174,7 +182,7 @@ Racket has a [timid set of memory diagnostics functions](https://docs.racket-lan
 
 I tried retrieveing the information at the beginning of the program execution and at the last iteration of the `lfoldl` function:
 
-```scheme
+```racket
 #lang lazy
 
 (dump-memory-stats)
@@ -186,7 +194,7 @@ I tried retrieveing the information at the beginning of the program execution an
         v)
       (lfoldl f (f (car l) v) (cdr l))))
 
-(lfoldl + 0 (range 1000000)) ; 1000000 because it's a high enough number, but runs to the end
+(lfoldl + 0 (range 1000000)) ; high enough number, but runs to the end
 ```
 
 The full output with the two dumps is [here](https://pastebin.com/xkDF5rkz). It's a bit confusing at first, but after removing the useless information (all the data that didn't change from one to the other) and comparing the two dumps, we have this:
@@ -207,13 +215,13 @@ But that all won't keep me from looking at what changed between the two dumps. A
  procedure              1,814,524  116,268,064  |  1,820,243  116,460,752
 ```
 
-All of these objects had an incredible growth in objects and size and are the ones that consume the most amount of memory. `#<composable-promise49>` wasn't event present in the first dump. My assumption is that all those promises are stuck somewhere in the stack, considering that the `lazy` language is making all sorts of operations a promise, the conditional and the call to the `f` function within `lfolfl` are probably becoming promises too.
+All of these objects had an incredible growth in objects and size and are the ones that consume the most amount of memory. `#<composable-promise49>` wasn't event present in the first dump. My assumption is that all those promises are stuck somewhere in the stack, considering that the `lazy` language is making all sorts of operations a promise, the conditional and the call to the `f` function within `lfolfl` are probably becoming promises too. Leaving the Lazy Racket aside...
 
 # The Solution
 
 The solution for this problem is the use of [Streams](https://docs.racket-lang.org/reference/streams.html):
 
-```scheme
+```racket
 (stream-fold + 0 (in-inclusive-range 0 1000000000))
 ```
 
@@ -227,7 +235,9 @@ I also wrote a custom version of the `stream-fold` function that dumps the memor
 
 # Conclusion
 
-I was motivated by [this repository](https://github.com/clarkzjw/one-two-three...infinity) with several implementations of several languages on this problem. I actually had the implementation with Streams quite early, but I wanted to explore a bit more other lazy structures in Racket, and more specifically the Lazy Racket. In the end, seems like it's not as simple to use as I imagined. While I didn't really learn about the internals of the lazy implementation of Racket, I enjoyed this whole process.
+I was motivated by [this repository](https://github.com/clarkzjw/one-two-three...infinity) with implementations in several languages on this problem. I actually had the implementation with Streams quite early, but I wanted to explore a bit more other lazy structures in Racket, and more specifically the Lazy Racket. In the end, seems like it's not as simple to use as I imagined. 
+
+While I didn't really learn a lot about the internals of the lazy implementation of Racket, I enjoyed this whole process. If you happen to know more about this, I'd love to hear from you.
 
 
 
