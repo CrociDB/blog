@@ -1,6 +1,6 @@
 ---
 title: "Analog is a Privilege"
-description: "Some rumblings about analog vs digital comparing the socioeconomic state of Brazil and Germany"
+description: "Some ramblings about analog vs digital comparing the socioeconomic state of Brazil and Germany"
 date: 2023-07-22T08:58:51+02:00
 draft: false
 tags:
