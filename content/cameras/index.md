@@ -9,7 +9,8 @@ thumb: "images/cameras.jpg"
 
 One of my main hobbies nowadays is film photography. And a big part of it is shooting with different old cameras, most of them fully mechanical. I've been collecting a few of them since I started and this page is a catalogue of my collection with basic information about each camera and my comments on them. This page will be updated every time I get a new one or have a new piece of information worth sharing.
 
----
+# Cameras in Collection
+
 ![Yashica Mat 124](images/yashica-mat.jpg)
 ## Yashica Mat 124
 
@@ -60,6 +61,14 @@ Big and chunky SLR from the late 60's. I bought two copies of this camera. Both 
 The first roll I shot with it was a Fomapan 400, so I could properly test it and it surprised me how sharp that lens is. I'd say it's one of the sharpest lenses in my collections. One interesting thing about it is that the back element is a bit yellow and is radioactive. It's made with Thorium. I'm not sure exactly why, but if someone says "sharpness", I'd readily believe. The shutter and mirror slapping sound is absolutely fantastic, it's pretty loud but helps the brain release dopamine.
 
 ---
+![Pentax Spotmatic](images/pentax-spotmatic.jpg)
+## Pentax Spotmatic
+
+Considered one of the best filly-mechanic SLRs from the early 60's, with sexy curves and no hotshoe mount for flash. Bought it from a German seller on ebay.
+
+I got it without a lens so I could use the Yashinon lens from the TL Electro X. Then I shot a friend's birthday to try out this camera for the first time, but weeks later I completely forgot about that film in it and opened the back, ruining all the moments in it.
+
+---
 ![Yashica Lynx 1000](images/yashica-lynx-1000.jpg)
 ## Yashica Lynx 1000
 
@@ -73,9 +82,28 @@ When I opened the shipping box I noticed that no rings on the camera would move 
 
 A very portable point-and-shoot from the 90's, the _youngest_ camera in my collection. Bought it from a German seller on ebay. 
 
-Even though it's a plasticky lightweight product of the 90s, I find the experience of shooting with camera really good. The lens is good enough if you consider it can all fit in your pocket and has a pretty strong flash always available when the light conditions are poor. It's a good camera to use on in-house parties or to have with you all the time. 
+Even though it's a plasticky lightweight product of the 90's, I find the experience of shooting with camera really good. The lens is good enough if you consider it can all fit in your pocket and has a pretty strong flash always available when the light conditions are poor. It's a good camera to use on in-house parties or to have with you all the time. 
 
 ---
+![Yashica T3](images/yashica-t3.jpg)
+## Yashica T3
+
+The predecessor of one of the most famous point-and-shoot, from late 80's. Chunky and with a quirky design, but with a good grip. Bought from a German seller on ebay.
+
+I actually quite enjoy shooting with this camera. The shutter button is a bit too sloppy for my taste, but the viewfinder is big enough to see the frame without any problems. I wish it was a bit smaller to be honest, but in general is a really good camera. Been using this primarily since I lost my L35AD2.
+
+---
+![Polaroid Impulse 600 AF](images/polaroid-impulse-af.jpg)
+## Polaroid Impulse 600 AF
+
+A plasticky behemoth from the late 80's. Bought from a German seller on ebay.
+
+It has a very interesting auto-focus system based on a sonar technology, and it workes pretty well, except if you have a window in between you and the subject. It uses 600 film and takes really pretty pictures.
+
+---
+
+# Cameras not in Collection anymore
+
 ![Nikon L35AD 2](images/nikon-l35ad2.jpg)
 ## Nikon L35AD 2
 
@@ -84,3 +112,5 @@ A fantastic point-and-shoot from the mid 80's. I bought it from a seller in UK o
 It's an incredible little point-and-shoot. Not as small as the Olympus Mju, but the experience is so much better, in my opinion. The weight of this camera makes you feel like it's a premium build, even though the exterior is all plastic. The shutter button feels really mechanical, there's an enjoyable resistence to it. I can't comment on the lens because I didn't develop the films I took with it, but the experience of shooting it is excellent.
 
 An interesting story about this camera is that it took more than two weeks to fly from UK to Germany, and in the exact same day it arrived I took it with me to a short trip to London.
+
+Another interesting-but-not-in-a-good way story is that I lost this camera in an Uber in São Paulo. It's really sad that the Uber driver never returned the messages. Kills me in curiosity about its destiny. I had a few family shots in a black and white film in it, but I imagine whoever got that camera might have opened the back right on the spot.
