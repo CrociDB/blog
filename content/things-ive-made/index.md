@@ -30,8 +30,11 @@ A page to show off some of the things I've made. I try to keep it updated with t
 
  - [doomoji](https://github.com/CrociDB/doomoji): DOOM rendered with emojis! I wrote a post about it: [Rendering Doom With Emojis](https://crocidb.com/post/rendering-doom-with-emojis/)
 
-## ShaderToy shaders
+## Creative Coding
 
+### ShaderToy shaders
+
+ - [Sleep Paralysis](https://www.shadertoy.com/view/DdKGDV): [Rendered](https://www.youtube.com/watch?v=yIkdXOrQlTI)
  - [Sea the Night](https://www.shadertoy.com/view/ssG3Wt): [Rendered](https://www.youtube.com/watch?v=rDinlO6VkTM)
  - [Night Sneakings](https://www.shadertoy.com/view/tlVXRz): [Rendered](https://www.youtube.com/watch?v=1XoumiL3F9U)
  - [Chess Pawn Board](https://www.shadertoy.com/view/3dBSWy): [Rendered](https://www.youtube.com/watch?v=Mh-rI9BDRb8)
