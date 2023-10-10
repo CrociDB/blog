@@ -62,7 +62,7 @@ void layec_vector_maybe_expand(void** vector_ref, long long element_size, long l
 }
 ```
 
-This is enough for most simple uses of a vector. And what really draws my attention here are 1) it's of course just an array, but the metadata is _hidden_; 2) it uses macros for most of the implementation, so it's light-weight and fast.
+This is enough for most simple uses of a vector. Now to understand that.
 
 ## Vector Structure
 
@@ -205,4 +205,4 @@ printf("Vector count: %lld\n", vector_count(v)); // 'Vector count: 19'
 vector_free(v);
 ```
 
-The example usage along with the vector code can be found in the [compiler explorer](https://godbolt.org/z/so3onfn3Y), where you can play with it, see the post-processed code and execute it.
+The example usage along with the vector code can be found in the [compiler explorer](https://godbolt.org/z/so3onfn3Y), where you can play with it, see the post-processed code and run it.
