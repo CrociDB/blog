@@ -1,6 +1,6 @@
 ---
 title: "On C++ Modules and Containers for Build Systems"
-description: ""
+description: "Some struggles on building modern C++ features such as modules and the idea of using containers to simplify the build process."
 date: 2023-12-06T01:58:51+02:00
 draft: false
 tags:
