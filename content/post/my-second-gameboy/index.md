@@ -1,7 +1,7 @@
 ---
 title: "My Second Gameboy"
-description: ""
-date: 2024-01-03T08:58:51+02:00
+description: "Following my first GameBoy, the DMG, now I got a GameBoy color and replaced the buttons and gave it a clean. Also Update on my game for the platform" 
+date: 2024-01-08T08:58:51+02:00
 tags:
  - hardware
  - gameboy
@@ -9,11 +9,11 @@ tags:
  - gamedev
 ---
 
-Following [my first GameBoy](/post/my-first/gameboy), I got a GameBoy Color! Not my favorite color, but the one available.
+Following [my first GameBoy](/post/my-first-gameboy), It was the time to get a GameBoy Color! Not my favorite color, but the one available.
 
 ![Weird blue color](images/gameboy.jpg)
 
-The seller said it was "working", but didn't mention some of the buttons weren't. Also, the d-pad was so soft that it kept pressing after only a touch!
+The seller said it was "working", but didn't mention some of the buttons weren't. Also, the d-pad was so soft that it kept pressing after only a touch.
 
 ![And it was filthy!](images/gameboy-dirty.jpg)
 
@@ -21,13 +21,11 @@ So I got the replacement parts and started working.
 
 ![Thanks for the gummies, Sandra!](images/replacement-parts.jpg)
 
-RetroReiz is very quick and always has the replacement parts for GameBoys, totally recommend.
-
-So I decided to open to replace those buttons and give it a good clean.
+[RetroReiz](https://retroreiz.de/) is very quick and always has the replacement parts for GameBoys, totally recommend if you are in Germany.
 
 ![The insides of the GameBoy Color](images/gameboy-open.jpg)
 
-It was not so bad from the inside, only a few corrosion spots from the battery, but nothing that a little bit of vinegar with baking soda can't clean.
+Inside wasn't too bad, only a few corrosion spots from the battery, but it was easy to clean with q-tips and some vinegar.
 
 ![Before and After](images/corrosion-spots.jpg)
 
