@@ -2,6 +2,7 @@
 title: "My Second Gameboy"
 description: "Following my first GameBoy, the DMG, now I got a GameBoy color and replaced the buttons and gave it a clean. Also Update on my game for the platform" 
 date: 2024-01-08T08:58:51+02:00
+thumb: images/gameboy-color.jpg
 tags:
  - hardware
  - gameboy
