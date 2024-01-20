@@ -2,6 +2,7 @@
 title: "Retrospective 2023"
 description: "A retrospective of what I made or achieved on 2023"
 date: 2024-01-20T08:33:51+02:00
+thumb: images/travel.jpg
 tags:
  - retrospective
 ---
