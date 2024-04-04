@@ -14,7 +14,7 @@ Back in 2018, I was writing shaders more often than ever and an interest in grap
 That was definitely time to learn some OpenGL, and I was presented with the more cohesive and modern [LearnOpenGL](https://learnopengl.com/), which I couldn't recommend more, with the acessible language and lot of content, it will not only teach you OpenGL but several of the most important techniques to build a fully featured 3d renderer. I started creating a Minecraft clone, because voxels were also a fascinating subject to me.
 
 I called it **clonecraft** and not long after I had something like this:
-{{< tweet 1075890855217688578 >}}
+{{< tweet id=1075890855217688578 user=crocidb >}}
 
 That was really satisfying that basically only following **LearnOpenGL** and reading some random texts online on how voxels work I was able to implement that. Even though it was supposed to be a "simple minecraft clone", I was implementing it in an abstract way, similar to how Unity engine works in my mind, except not following the component model. So I had classes for Transform, GameObject, Scene, Material, Mesh, Shader, etc. That was almost feeling like an engine.
 

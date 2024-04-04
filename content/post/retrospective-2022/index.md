@@ -9,7 +9,7 @@ tags:
 
 For the last few years I've been writing a tweet in the end of the year with some of my life achievements, projects and professional changes. This year, based on other blogs I read, I decided to make a more complete post and include also other interesting things like some of the book I read and events that happened this year.
 
-{{< tweet 1614643074067566593 >}}
+{{< tweet id=1614643074067566593 user=crocidb >}}
 
 # Projects
 
