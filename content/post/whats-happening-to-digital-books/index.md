@@ -3,6 +3,7 @@ title: "What's happening to Digital Books?"
 description: "Having digital version of literature books is pretty common, but why doesn't the comic book market follow the same trend?"
 date: 2024-04-05T08:58:51+02:00
 draft: false
+thumb: "images/bookshelf.jpg"
 tags:
  - thoughts
 ---
