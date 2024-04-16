@@ -14,6 +14,7 @@ A page to show off some of the things I've made. I try to keep it updated with t
 
 ### Game Jam Games
 
+ - [Clone Stacking](https://crocidb.itch.io/clone-stacking): A puzzle game made for Ludum Dare 55 (2024). It's made in TIC-80 with Fennel (a LISP that runs in Lua).
  - [SpaceLord X](https://crocidb.itch.io/spacelord-x): A game made for the Ludum Dare 51 (2022), inspired by the Atari classic SpaceMaster X-7.
  - [Spacebar Clicker](https://crocidb.itch.io/spacebar-clicker): Simple clicker game made for the #js13kgames 2021. _Fun fact_: it's my most played game ever. Every now and then I get message from someone asking me to update it.
  - [Mitosis Project](https://crocidb.itch.io/mitosis-project): Puzzle FPS game with telekinesis mechanic. Made for the Global Game Jam 2020.
