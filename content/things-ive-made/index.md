@@ -1,7 +1,7 @@
 ---
 title: "Things I've Made"
 description: "Just a page to show off some of the stuff I've made"
-date: 2023-08-17T10:03:49+02:00
+date: 2024-05-30
 ---
 
 A page to show off some of the things I've made. I try to keep it updated with the new stuff, but also consider removing items whenever I feel like. Inspired by [Mary Rose Cook](https://maryrosecook.com/blog/post/things-ive-made-and-done).
@@ -45,4 +45,5 @@ A page to show off some of the things I've made. I try to keep it updated with t
 
 ## Music
 
+ - [Clone Stacking Soundtrack](https://soundcloud.com/bruno-croci/clone-stacking): The soundtrack of my game made for Ludum Dare 55, Clone Stacking.
  - [Brazil](https://soundcloud.com/bruno-croci/brazil): A lo-fi tune.
