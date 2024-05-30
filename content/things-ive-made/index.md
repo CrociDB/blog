@@ -31,7 +31,7 @@ A page to show off some of the things I've made. I try to keep it updated with t
 
  - [doomoji](https://github.com/CrociDB/doomoji): DOOM rendered with emojis! I wrote a post about it: [Rendering Doom With Emojis](https://crocidb.com/post/rendering-doom-with-emojis/)
 
-## Creative Coding
+## Generative Art
 
 ### ShaderToy shaders
 
@@ -43,7 +43,12 @@ A page to show off some of the things I've made. I try to keep it updated with t
  - [Blue Oyster Cult](https://www.shadertoy.com/view/wdyGzV)
  - [Marcher of Puppets](https://www.shadertoy.com/view/WslGzM)
 
+### Genuary
+
+ - [Genuary 2024](/post/genuary-2024/)
+
 ## Music
 
  - [Clone Stacking Soundtrack](https://soundcloud.com/bruno-croci/clone-stacking): The soundtrack of my game made for Ludum Dare 55, Clone Stacking.
  - [Brazil](https://soundcloud.com/bruno-croci/brazil): A lo-fi tune.
+
