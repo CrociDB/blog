@@ -2,7 +2,7 @@
 title: "Postmortem: Clone Stacking"
 description: "Postmortem of my game for the Ludum Dare 55: Clone Stacking. Written in Fennel in TIC-80." 
 date: 2024-06-02
-thumb: images/game_menu.jpg
+thumb: images/game_menu.png
 tags:
  - gamedev
  - gamejam
