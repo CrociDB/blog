@@ -1,7 +1,7 @@
 ---
 title: "I Wrote a Webserver in Haskell"
 description: "My June project was a Webserver in Haskell, based on the HTTP Server tutorial from Codecrafters."
-date: 2024-06-25
+date: 2024-06-27
 draft: false
 thumb: images/directory_listing.png
 tags:
