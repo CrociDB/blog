@@ -6,13 +6,13 @@ date: 2024-05-30
 
 A page to show off some of the things I've made. I try to keep it updated with the new stuff, but also consider removing items whenever I feel like. Inspired by [Mary Rose Cook](https://maryrosecook.com/blog/post/things-ive-made-and-done).
 
-## Games Related
+## Software
 
-### Tools
-
+ - [ush](https://github.com/CrociDB/ush): a webserver written in Haskell.
+ - [flingern](https://github.com/CrociDB/flingern): a simple static gallery website generator, mostly for Photographers.
  - [annileen](https://github.com/CrociDB/annileen): a multiplatform 3d game engine, written in C++ with bgfx. Still in development.
 
-### Game Jam Games
+## Gamejam Games
 
  - [Clone Stacking](https://crocidb.itch.io/clone-stacking): A puzzle game made for Ludum Dare 55 (2024). It's made in TIC-80 with Fennel (a LISP that runs in Lua).
  - [SpaceLord X](https://crocidb.itch.io/spacelord-x): A game made for the Ludum Dare 51 (2022), inspired by the Atari classic SpaceMaster X-7.
@@ -22,12 +22,12 @@ A page to show off some of the things I've made. I try to keep it updated with t
  - [Anthority](https://crocidb.itch.io/anthority): Ant colony simulation game. Made for #js13kgames 2017.
  - [Phosphorus Dating](https://crocidb.itch.io/phosphorus-dating): A dating system simulation game, you have to match people together. Made for the #js13kgames 2016. I wrote a [Postmortem](https://crocidb.com/post/postmortem-phosphorus-dating/) about this game here.
 
-### Game Clones
+## Game Clones
 
  - [Wordlos](https://crocidb.itch.io/wordlos): It's a version of Wordle for DOS completely written in assembly x86.
  - [retro2048](https://crocidb.github.io/retro2048/): A clone of the classic 2048 game for the bootloader. I wrote a post about the making of it: [Writing a game for the boot sector](https://crocidb.com/post/bootsector-game/)
 
-### Fun Experiments
+## Fun Experiments
 
  - [doomoji](https://github.com/CrociDB/doomoji): DOOM rendered with emojis! I wrote a post about it: [Rendering Doom With Emojis](https://crocidb.com/post/rendering-doom-with-emojis/)
 

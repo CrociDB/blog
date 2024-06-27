@@ -1,6 +1,6 @@
 ---
 title: "Now"
-date: 2024-05-22
+date: 2024-06-26
 ---
 
  > Now page is inspired by [Derek Sivers](https://sive.rs/).
@@ -8,8 +8,8 @@ date: 2024-05-22
 ### Tech and Development
 
  - Working on a small web game, still secret. Sharping my Javascript skills.
+ - Working on [ush](https://github.com/CrociDB/ush), a simple webserver, in Haskell.
  - Working on a small Android app to add color frame to photos that I can post on social media. I know there's a plethora of apps that do exactly that, but the one I really liked using is not supported anymore, so I decided to create my own with Flutter. Will probably release that for free with ads when it's ready.
- - Exploring the OpenAI API in a few experiments with automation.
  - Practicing a lot my neovim skills (with NVChad) lately, mostly using it as my main editor outside work (where I use Visual Studio).
 
 ### Photography
@@ -24,10 +24,5 @@ I think it makes for such a surreal imagery with colors that pop unnaturally. Th
 
 I'm working on a music project. Writing, recording and producing some instrumental music (mostly guitar, bass, drums and synth), I hope to release digitally as an EP or a short Album by the end of this year.
 
-### Culture
-
- - Reading **Project Hail Mary**, by **Andy Weir**.
- - Since my trip to **Brussels** earlier this year, I've been reading some french-belgian comics, such as **Tin-Tin**, **Asterix & Obelix** and other stuff like some works by **François Boucq**.
-
-Last edit: **22-05-2024**
+Last edit: **26-06-2024**
 
