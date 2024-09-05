@@ -98,25 +98,35 @@ It has a very interesting auto-focus system based on a sonar technology, and it 
 ## Polaroid Land Camera 1000
 ![Polaroid Land Camera 1000](images/polaroid-land-camera-1000.jpg)
 
-TO DO
+A classic Polaroid camera, also known as _OneStep_, from the 70s. It was the first plastic camera they made, supposed to be cheaper than the absolute classic SX-70. I got as a present from a colleague after buying some other photography gear from him.
+
+I tried using it during a New Year's party in my place, with the flash that came with it, and I remember a lot of people complained the flash was _way too_ strong. And after the second photo, it drained the battery completely. And since the battery comes in the photo packages for these old models, I was left with 6 unused photos in the cartridge that I just can't use anymore. I assume old packages had a much better battery, or the package I got had a faulty or almost empty one.
+
+Anyway, I still think of modifying it to use external batteries and also the newer film they produce.
 
 ---
 ## Yashica Electro 35 MC
 ![Yashica Electro 35 MC](images/yashica-electro35-mc.jpg)
 
-TO DO
+A beautiful portable from early 70s. Bought it on eBay.
+
+It's tiny and very easy to carry around, don't even need to hang on my neck, it goes on my pocket! It's a zone focus camera, but that doesn't bother me anymore. The lens is absolutely great. One of my favorite cameras in my collection. 
 
 ---
 ## Yashica Electro 35 GSN
 ![Yashica Electro 35 GSN](images/yashica-electro35-gsn.jpg)
 
-TO DO
+A true classical of the 60s consumer cameras. From eBay.
+
+There's just nothing bad that can be said about this camera. Yes, I agree it's a bit too big and heavy, but shooting it is just pure pleasure. It's a great rangefinder with automatic exposure. Mine is in a really good state. Definitely need to take it out more often.
 
 ---
 ## Nikon Nikonos V
 ![Nikon Nikonos V](images/nikon-nikonos-v.jpg)
 
-TO DO
+Known for being a professional camera for underwater photographers and divers. Got it on eBay.
+
+I took it to Brazil, most importantly to the beaches in Guarujá (São Paulo coast) and to the amazonian rivers in Manaus. Took it to take mostly underwater photos, but in the same trip I ended up losing my **Nikon L35AD 2**, so I had to use that for everything. It's a range focus camera, so it can be a bit complicated to snap a photo on low light, but nonetheless a fantastic camera. Plus, it looks absolute banger.
 
 ---
 ## Lomography Fisheye
