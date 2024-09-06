@@ -132,13 +132,17 @@ I took it to Brazil, most importantly to the beaches in Guarujá (São Paulo coa
 ## Lomography Fisheye
 ![Lomography Fisheye](images/lomo-fisheye.jpg)
 
-TO DO
+A cute little fisheye camera, or just a toy?
+
+It's a very simple camera with a plastic lens. I only ever shot one roll through it and honestly didn't like the results very much, but I want to try more. A little photo book, made with this camera, was included in the package and I was pleasently surprised with it. Definitely giving it another try.
 
 ---
 ## Zeiss Ikon Nettar 517/2
 ![Zeiss Ikon Nettar 517/2](images/zeiss-ikon-nettar-517-2.jpg)
 
-TO DO
+The oldest camera I have ever used. Bought from eBay.
+
+A very simple foldable medium format camera that can yield really good images. I wrote a whole text on it here: [Old Camera: Zeiss Ikon Nettar 517/2](/post/camera-zeiss-ikon-nettar-517-2/).
 
 # Cameras not in Collection anymore
 
@@ -157,7 +161,7 @@ Another interesting-but-not-in-a-good way story is that I lost this camera in an
 ## Olympus Mju
 ![Olympus Mju](images/olympus-mju.jpg)
 
-A very portable point-and-shoot from the 90's, the _youngest_ camera in my collection. Bought it from a German seller on ebay. 
+A very portable point-and-shoot from the 90's. Bought it from a German seller on ebay. 
 
 Even though it's a plasticky lightweight product of the 90's, I find the experience of shooting with camera really good. The lens is good enough if you consider it can all fit in your pocket and has a pretty strong flash always available when the light conditions are poor. It's a good camera to use on in-house parties or to have with you all the time. 
 
