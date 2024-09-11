@@ -7,7 +7,7 @@ date: 2024-09-11
 
 ### Life
 
-I've been trying to change the way I eat lately. Started cooking way more often and I realized I love cooking the feeling of eating fresh food I just made. I'm not a vegetarian nor a vegan, but I'm mostly interested in cooking vegan dishes. Mostly using fresh vegetables and legumes, I'm trying to get the most flavor out of these ingredients. I do cook fish every now and then, as it's my favorite type of meat.
+I've been trying to change the way I eat lately. Started cooking way more often and I realized I love the feeling of eating fresh food I just made. I'm not a vegetarian nor a vegan, but I'm mostly interested in cooking vegan dishes. Mostly using fresh vegetables and legumes, I'm trying to get the most flavor out of these ingredients. I do cook fish every now and then, as it's my favorite type of meat.
 
 Most part of my life after I left my mom's was eating sandwiches and ultra-processed food. I thought that if I cooked I wouldn't have time for anything else. I'd also eat out and order a lot of delivery food. I'm so happy I changed that and most days I look forward for that time I'll be in the kitchen.
 
