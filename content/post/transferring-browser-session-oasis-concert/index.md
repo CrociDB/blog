@@ -3,6 +3,7 @@ title: "Transferring Browser Session: Oasis Concert Tickets"
 description: "So Oasis got back together for a tour. The tickets were supposed to be out at 31th of August, at 9am London time, 10am my time in Germany. I sit down at the computer half an hour earlier and I get in a queue, that I didn't know at the moment, but would take a long time."
 date: 2024-09-21
 draft: false
+thumb: images/oasis_queue.png
 tags:
  - webdev
  - javascript
