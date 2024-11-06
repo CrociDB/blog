@@ -7,6 +7,7 @@ tags:
  - thoughts
  - programming
  - tools
+ - editors
 ---
 
 The first IDE I ever used was **Turbo Pascal**. It ran on Windows through a DOS terminal. But it was really with **Dev-C++**, over twenty years ago when I started learning _C_, that I felt how these programming software suites were useful. It seemed less complex than **Visual C++**, and if I'm not mistaken, it supported the Portuguese language. I remember how simple it was to setup a new project from a template and start coding. A few more steps to link Allegro -- the simple graphics library -- and I was good to go. It offered syntax highlight, build system (with a compiler: Mingw!) and debugger. These are many of the tasks that would give a beginner C programmer a headache if they were without an IDE.
