@@ -8,13 +8,12 @@ tags:
 ---
 
 I was pretty excited to write this year's retrospective because it was pretty intense for me. Especially compared to the previous ones. As I [posted here](/post/retrospective-2023/), 2023 wasn't particularly productive. This one was much better, although not too smooth.
-## Overall
 
 I like to start it with a big picture. Last year, one of the highlights of this section was my recent notetaking habit. One round-around-the-sun later and I can confirm I've been doing it a lot more and I can already see the benefits. I started using Obsidian for general notes and doing some sort of [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) too. So now I have a git repo with my notes where I can sync anywhere and keep it safe.
 
 ![Obsidian Graph](images/r2024_notesgraph.jpg)
 
-The main advantage of that note taking technique is connecting different notes and subjects together and Obsidian offers a really nice graph view with the connections. It does require some good amount of maintenance in the notes to keep them updated and connected to other ideas, but I think that's exactly why it's so useful. I feel like every time I go through them I have something new to add or some more insights on it. Also, I find I can develop the ideas much better with them written down like that than just in my mind.
+The main advantage of that note taking technique is connecting different notes and subjects together and Obsidian offers a really nice graph view. It does require some good amount of maintenance in the notes to keep them updated and connected to other ideas, but I think that's also good to keep some subjects fresh in mind. I feel like every time I go through them I have something new to add or some more insights on it. Also, I find I can develop the ideas much better with them written down like that than just in my head.
 
 I'm still learning and still improving my technique, but I think that was incredibly mind opening for me. I never had a notetaking habit, I went through school without it, partially through university too. Maybe my brain was faster and more efficient back then, but I wonder how much more I could have learned if I did it.
 
@@ -106,11 +105,15 @@ For some reason, deep inside, I thought that I _couldn't draw_, even thought I b
 
 I started drawing and painting with watercolor and a whole world of art opened to me. I feel more expressive, more free and more inspired. I have some sketchbooks at home and one that I carry around with a good liner. That aligned to the habit of taking notes, I feel like having a small notebook and a pen with me all the times is just necessary.
 
+![Made after a photo I took the previous year](images/r2024_painting1.jpg)
+
 As a result, I'm focusing my thinking way more on creating cohesive things that don't need to be _products_. Stuff that is not about _making money_. So much of my thinking was going towards that direction, and guess what, I'm not rich. The takeaway is more art projects than art pieces. I don't care that much for good singular photos than I care for a project that ties photos together centered on an idea. Not about one drawing I make, but how I can tell a story by combining drawings together.
 
 # Music Production
 
 As part of my _blooming_ in art, I've finally started learning how to record instruments and produce a song. In fact, I already have an album (or an EP) concept in progress. It's an instrumental Guitar + Synth project, I already have a few songs complete, just waiting to be mixed. I'm still not set on how many songs I want for this project, more than I currently have, but the pressure of making it better may be keeping me from finishing it.
+
+![Working on some music](images/r2024_music.png)
 
 I bought an online course on mixing, since it seems to be one of the hardest parts for me. Hopefully that will be out in 2025!
 
