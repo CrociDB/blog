@@ -1,5 +1,5 @@
 ---
-title: "On Programming with AI Assistants"
+title: "Treat Your LLM Like a Junior Dev, Not an Oracle"
 description: "I skip Vibe Coding. I treat LLMs like smart junior devs: great for research & repetitive tasks, not final code. This helps my focus, reduces context switching, and improves my coding quality of life."
 date: 2025-03-26
 tags:
