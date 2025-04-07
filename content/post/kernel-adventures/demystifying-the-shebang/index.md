@@ -1,6 +1,6 @@
 ---
 title: "Demystifying the #! (shebang): Kernel Adventures"
-description: ""
+description: "Clarifying the shebang (#!) mechanism: A step-by-step look using strace and kernel code shows how Linux handles script execution directly, revealing the shell isn't involved initially."
 date: 2025-04-07
 tags:
  - kernel-adventures
