@@ -29,14 +29,11 @@ print("Hello, World!")
 This is particularly useful because many bundled Linux utilities are actually scripts. Thanks to the shebang, you don't need to explicitly invoke their interpreters. For example, there are two (very confusing) programs to create a user on Linux: `useradd` and `adduser`. One of them is the actual program that will create the user in the system, the other one is a utility that will create the user, the home directory and configure the user for you. Since I never remember which one is which, a good way to check is using the utility `file`:
 
 ```shell
-$ file $(where useradd)
+$ file $(which useradd)
 /usr/sbin/useradd: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2 (...)
-/sbin/useradd:     ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2 (...)
 
-$ file $(where adduser)
+$ file $(which adduser)
 /usr/sbin/adduser: Perl script text executable
-/sbin/adduser:     Perl script text executable
-
 ```
 
 Ok, we know that `addser` is the tool we want to use, because it's more user-friendly and generally does what you'd expect when adding a user. And yes, if you check how it starts:
@@ -116,7 +113,7 @@ Those format modules are:
 - binfmt_misc.c
 - binfmt_script.c
 
-And they all are responsible for registering themselves so `search_binary_handler` test each one of them. We know that [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format) is the traditional binary format that Linux uses, [ELF FDPIC](https://cateee.net/lkddb/web-lkddb/BINFMT_ELF_FDPIC.html) is an extension to ELF, FLAT binaries are just the instructions without any specific system configuration ([this question](https://stackoverflow.com/questions/1283342/executing-a-flat-binary-file-under-linux) explains a bit), SCRIPT is the format that interprets our shebang, but what really caught my eye was MISC.
+And they all are responsible for registering themselves so `search_binary_handler` test each one of them. We know that [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format) is the regular binary format that Linux uses, [ELF FDPIC](https://cateee.net/lkddb/web-lkddb/BINFMT_ELF_FDPIC.html) is an extension to ELF, FLAT binaries are just the instructions without any specific system configuration ([this question](https://stackoverflow.com/questions/1283342/executing-a-flat-binary-file-under-linux) explains a bit), SCRIPT is the format that interprets our shebang, but what really caught my eye was MISC.
 
 According to the [official Kernel Admin Guide](https://docs.kernel.org/admin-guide/binfmt-misc.html):
 
@@ -314,3 +311,12 @@ if (IS_ERR(bprm)) {
 ```
 
 Now, understanding how `path_noexec` checks the _execute_ permission in the file involves a lot of other stuff like understanding how the kernel deals with the filesystem. But that'll be a future post.
+
+### EDIT
+
+ - Switched the usage of `where` for `which`, since it's a zsh-only command. These add to my list of confusing commands just like `adduser` and `useradd`. Thanks **u/pihkal**.
+ - I corrected calling ELF the "traditional binary format" of linux to "regular binary format". Although ELF has been the regular format for so many years, calling it traditional was maybe not correct. Thanks **/u/Admqui**. Some material on ELF and the old `a.out` format:
+    - [The Linux ELF HOWTO (1996)](https://web.archive.org/web/20040713171954/http://www.ibiblio.org/pub/historic-linux/distributions/slackware/3.9/docs/ELF-HOWTO)
+    - [How programs get run: ELF binaries (2015)](https://lwn.net/Articles/631631/)
+
+Join the discussion on [Reddit](https://www.reddit.com/r/programming/comments/1jukuv3/demystifying_the_shebang_kernel_adventures/).
