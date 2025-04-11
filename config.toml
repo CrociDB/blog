@@ -1,6 +1,6 @@
-baseURL = 'https://crocidb.com'
+baseURL = 'https://crocidb.com/'
 languageCode = 'en-us'
-title = 'Bruno Croci'
+title = "Bruno Croci"
 
 theme = 'pixyll'
 contentdir = "content"
@@ -19,6 +19,7 @@ canonifyurls = true
 
 [params]
   author = "Bruno Croci"
+  authorWebsite = "https://bruno.croci.me/"
   description = "I write about programming, gamedev, hacking projects, creative code, photography and my thoughts about anything that I like."
   keywords = "programming, gamedev, hacking, coding, photography, thoughts"
   
