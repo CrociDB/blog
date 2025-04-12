@@ -36,7 +36,7 @@ $ file $(which adduser)
 /usr/sbin/adduser: Perl script text executable
 ```
 
-Ok, we know that `addser` is the tool we want to use, because it's more user-friendly and generally does what you'd expect when adding a user. And yes, if you check how it starts:
+Ok, we know that `adduser` is the tool we want to use, because it's more user-friendly and generally does what you'd expect when adding a user. And yes, if you check how it starts:
 
 ```shell
 $ head -n 1 /usr/sbin/adduser
@@ -319,4 +319,7 @@ Now, understanding how `path_noexec` checks the _execute_ permission in the file
     - [The Linux ELF HOWTO (1996)](https://web.archive.org/web/20040713171954/http://www.ibiblio.org/pub/historic-linux/distributions/slackware/3.9/docs/ELF-HOWTO)
     - [How programs get run: ELF binaries (2015)](https://lwn.net/Articles/631631/)
 
-Join the discussion on [Reddit](https://www.reddit.com/r/programming/comments/1jukuv3/demystifying_the_shebang_kernel_adventures/).
+Join the discussion on:
+ - [HackerNews](https://news.ycombinator.com/item?id=43646698)
+ - [Reddit](https://www.reddit.com/r/programming/comments/1jukuv3/demystifying_the_shebang_kernel_adventures/).
+ - [Hackaday](https://hackaday.com/2025/04/11/tracing-the-how-the-linux-kernel-handles-the-shebang/)
