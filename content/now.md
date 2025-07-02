@@ -1,6 +1,6 @@
 ---
 title: "Now"
-date: 2025-07-01
+date: 2025-07-02
 ---
 
  > Now page is inspired by [Derek Sivers](https://sive.rs/).
@@ -8,7 +8,7 @@ date: 2025-07-01
 ### Tech and Development
 
  - Working on a web game, still unannounced
- - Working on a RSS/ATOM feed reader app for the terminal, in Rust
+ - Working [bulletty](https://github.com/CrociDB/bulletty), a TUI RSS/ATOM feed reader app for the terminal, in Rust
  - Studying the Linux kernel, bit by bit
 
 ### Art
@@ -23,4 +23,4 @@ date: 2025-07-01
 
 ---
 
-Last edit: **01-07-2025**
+Last edit: **02-07-2025**

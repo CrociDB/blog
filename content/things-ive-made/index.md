@@ -8,6 +8,7 @@ A page to show off some of the things I've made. I try to keep it updated with t
 
 ## Software
 
+ - [bulletty](https://github.com/CrociDB/bulletty): a TUI RSS/ATOM feed reader that lets your store you decide where to store your data
  - [flingern](https://github.com/CrociDB/flingern): static art website generator
  - [annileen](https://github.com/CrociDB/annileen): a multiplatform 3d game engine, written in C++ with bgfx
 
