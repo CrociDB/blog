@@ -4,7 +4,15 @@ description: "Just a page to show off some of the stuff I've made"
 date: 2024-05-30
 ---
 
-A page to show off some of the things I've made. I try to keep it updated with the new stuff, but also consider removing items whenever I feel like. Inspired by [Mary Rose Cook](https://maryrosecook.com/blog/post/things-ive-made-and-done).
+A page to show off some of the things I've made and worked on professionally and for hobby. I try to keep it updated with the new stuff, but also consider removing items whenever I feel like. Inspired by [Mary Rose Cook](https://maryrosecook.com/blog/post/things-ive-made-and-done).
+
+- [Software](#software)
+- [Experiments](#experiments)
+- [Gamejam Games](#gamejam-games)
+- [Art](#art)
+- [Generative Art](#generative-art)
+- [Music](#music)
+- [Shipped Games](#shipped-games)
 
 ## Software
 
@@ -49,4 +57,16 @@ A page to show off some of the things I've made. I try to keep it updated with t
 
  - [Clone Stacking Soundtrack](https://soundcloud.com/bruno-croci/clone-stacking): the soundtrack of my game made for Ludum Dare 55, Clone Stacking
  - [Brazil](https://soundcloud.com/bruno-croci/brazil): a lo-fi tune
+
+## Shipped Games
+
+As a professional video game programmer, I have worked and helped ship those games:
+
+- [[Ubisoft] XDefiant](https://www.youtube.com/watch?v=NoNpmAzGyB8): I worked on the audio pipeline of this arena FPS that Ubisoft unfortunatelly killed not long after released
+- [[Ubisoft] Assassin's Creed: Nexus VR](https://www.youtube.com/watch?v=T-7nObnsa48): I was part of the NPC team in this project, creating behaviours and making sure the cities were populated in this ambitious Quest2 title
+- [[Black River Studios] Conflict0: Revolution](https://www.youtube.com/watch?v=zYb7DUXhRA8): A mobile turn-based tactics game. Originally written for Tizen (!), I worked mainly on the Android port of it, with many new gameplay mechanics and content
+- [[Black River Studios] Conflict0: Shattered](https://www.youtube.com/watch?v=hZKnQ6PHFnw): A VR narrative shooter made for the GearVR platform. I created most of all core machanics such as shooting and ballistics
+- [[Black River Studios] Rock'n'Rails](https://www.youtube.com/watch?v=aX-dYMQYJDQ): A multiplayer music rail-shooter for the GearVR platform. Mostly gameplay and network programming. I also presented that game at **PAX East** and it was a fantastic experience
+- [[Black River Studios] Angest VR](https://www.youtube.com/watch?v=ZoV0tPdOeTo): A surreal VR adventure game made for the GearVR. Gameplay programming
+- [[Black River Studios] Finding Monsters Adventure](https://www.youtube.com/watch?v=STzdj04n7dc): a mobile photography game, where the player has to find the best shots in a fantasy worlds with cute creatures. I was responsible for several core-mechanics of the game
 
