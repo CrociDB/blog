@@ -2,6 +2,7 @@
 title: "Rust after six months: my impressions on language features, tooling and ecosystem"
 description: "Some of my thoughts on Rust, after working with it for the last 6 months on bulletty, the TUI feed reader"
 date: 2025-11-05
+thumb: "images/use.png"
 tags:
  - rust
  - bulletty
