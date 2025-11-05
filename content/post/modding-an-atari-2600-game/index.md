@@ -19,7 +19,7 @@ I had a lot of fun with it anyway. Some of the games we had were Pac-Man, Space 
 I haven't played any Atari games in a long time, and I didn't notice, when I started this, that most of the emulatores already come with an option to disable collisions. So, this text is mostly a rewritten version of my notes while going through this. You'll follow my thought process and mistakes, but maybe you'll have fun. Remember, it's all about the process!
 
 # First steps
-After a quick research, I found a [disassembly of the game online](https://www.romhacking.net/documents/518/), made by [Thomas Jentzsch](https://www.romhacking.net/community/1322/). He's still very active in the [Atari 2600 community](https://forums.atariage.com/profile/45-thomas-jentzsch/), and has interesting [games of his own](https://github.com/thrust26) for the platform. The code is really well documented, which makes my job much easier.
+After a quick research, I found a [disassembly of the game online](https://www.romhacking.net/documents/518/), made by [Thomas Jentzsch (JTZ)](https://www.romhacking.net/community/1322/). He's still very active in the [Atari 2600 community](https://forums.atariage.com/profile/45-thomas-jentzsch/), and has interesting [games of his own](https://github.com/thrust26) for the platform. The code is really well documented, which makes my job much easier.
 Ok, first thing is: compile and run it. I followed this tutorial [Atari 2600 Programming for Newbies](https://www.randomterrain.com/atari-2600-memories-tutorial-andrew-davie-01.html) to setup my environment with DASM and Stella, the assembler and the emulator.
 
 Then I created a Makefile to build it:
@@ -127,7 +127,7 @@ Searching by other uses of `CXM0P`, I see it's also subtracted the same value. S
 
 ![no more divergences](images/cleared-divergences.png)
 
-All the values are correct! Didn't even had to do hex math, sometimes following the gut feeling pays off!
+All the values are correct! Didn't even had to do hex math, sometimes following the gut feeling pays off! I wonder why those values were necessary. I have two hypothesis, either const value of `CXM0P` changed in the last 8 years--considering the last update to this disassembly was in 2017--, or JTZ sabotaged it on purpose to get rid of any legal accusations. Or a third hypothesis: it was a puzzle all along.
 
 Ok, so now I have a functioning assembly of River Raid that I can hack into. I tried playing, but turns out I'm still pretty bad at it. This game is hard, just as it was when I was a kid.
 
@@ -198,7 +198,7 @@ How did I miss it when I was checking the video signal format? Anyway, changing 
 
 I also realized that after playing that for almost 10 minutes straight still makes me a bit dizzy and everything looks like it's moving down on the real world.
 
-But since it was too easy and my initial idea was already implemented by the source code reverse engineered by the author, I decided to make something different. Let's make a mod and change the rules of the game, re-purposing some of the mechanics:
+But since it was too easy and my initial idea was already implemented in the disassembly by JTZ, I decided to make something different. Let's make a mod and change the rules of the game, re-purposing some of the mechanics:
 
 - No collisions anymore. You're flying an aircraft, it won't collide with the land, ships or helicopters
 - No more fuel logic. Let's say you have infinite fuel
