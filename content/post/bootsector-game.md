@@ -261,7 +261,7 @@ That made me think in a way that I probably wouldn't if I were writing Javascrip
 
 ### Size limitation
 
-Of course having to write the complete game with such a limitation is a hell of a challenge, since 512 bytes can come quicker than you think. I had to constantly make decisions such as keep the score, the game title and randmozation for the new block out. Many of the algorithms were implemented a few times in order to make it fit to the final version of the game. And that's why I keep a DOS version of it, because it's clearly more interesting and fun.
+Of course having to write the complete game with such a limitation is a hell of a challenge, since 512 bytes can come quicker than you think. I had to constantly make decisions such as keep the score, the game title and randomization for the new block out. Many of the algorithms were implemented a few times in order to make it fit to the final version of the game. And that's why I keep a DOS version of it, because it's clearly more interesting and fun.
 
 
 ## Conclusion
