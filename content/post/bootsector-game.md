@@ -104,7 +104,7 @@ In order to invoke that function, we need to push the arguments to the stack and
 
 The first line of the `draw_box` function will store the pointer to the stack on `BP`, so we could retrieve the parameters from the stack. The addressing starts with `BP+2` since the last value on the stack points to the address that invoked the `call` instruction, so `ret` knows where to return to.
 
-The most interesting line in this function probaly is: `rep stosw`. `rep` instruction will decrement CX and repeat the next instruction while CX > 0, it does pretty much the same thing as the instruction `loop`, excpet it executes a instruction instead of jumping to a label. `stosw`, however, will copy the value of `AX` into `[ES:DI]` and will increment the pointer in `DI`. So before that, we basically copy the char data to `AX`, add the offset to that position in `DI`, and set the amount of chars to `CX`, then `rep stosw` will do all the work for us.
+The most interesting line in this function probaly is: `rep stosw`. `rep` instruction will decrement CX and repeat the next instruction while CX > 0, it does pretty much the same thing as the instruction `loop`, except it executes a instruction instead of jumping to a label. `stosw`, however, will copy the value of `AX` into `[ES:DI]` and will increment the pointer in `DI`. So before that, we basically copy the char data to `AX`, add the offset to that position in `DI`, and set the amount of chars to `CX`, then `rep stosw` will do all the work for us.
 
 Of course we still need to display some text:
 
