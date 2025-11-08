@@ -53,7 +53,7 @@ This will generate a `game.com` file, a DOS executable. If you run that on DOSBo
 
 ## The text mode
 
-BIOS support a few graphics modes. We're using the 80-25 text mode, which means it supports 80 columns and 25 lines of characters. So the video memory from `0xB800` to `0xC7A0` will store two bytes for each character, one for formatting and one for the ASCII code. In order to put a character in the screen, all we need to do is copy the character data into the right position in memory. Example, this two bytes `0x2761` means character `'a'` (0x61), green background (0x20) and gray foreground (0x07). More info on the colors can be found [here](https://en.wikipedia.org/wiki/BIOS_color_attributes). 
+The BIOS supports a few graphics modes. We're using the 80-25 text mode, which means it supports 80 columns and 25 lines of characters. So the video memory from `0xB800` to `0xC7A0` will store two bytes for each character, one for formatting and one for the ASCII code. In order to put a character in the screen, all we need to do is copy the character data into the right position in memory. Example, this two bytes `0x2761` means character `'a'` (0x61), green background (0x20) and gray foreground (0x07). More info on the colors can be found [here](https://en.wikipedia.org/wiki/BIOS_color_attributes). 
 
 First we need to set the text mode calling the interrupt service `0x10`, passing `AH=00` (set video mode function) and `AL=02` (the mode 02). Here you can find more [functions of service 0x10](https://en.wikipedia.org/wiki/INT_10H), and here more [information on video modes](http://minuszerodegrees.net/video/bios_video_modes.htm). Right after that we acquire the pointer to the video data and store it onto the _Extended Segment_ register: `ES`. 
 
@@ -200,7 +200,7 @@ Then change your prefered boot device on your BIOS, stick it in and reboot.
 
 ![Booting from a computer](https://i.imgur.com/zuJffBg.png)
 
-## Challanges
+## Challenges
 
 ### Algorithms
 
