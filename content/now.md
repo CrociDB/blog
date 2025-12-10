@@ -1,6 +1,6 @@
 ---
 title: "Now"
-date: 2025-08-08
+date: 2025-12-10
 ---
 
  > Now page is inspired by [Derek Sivers](https://sive.rs/).
@@ -9,11 +9,11 @@ date: 2025-08-08
 
  - Working on a full version of Spacebar Clicker
  - Working on [bulletty](https://github.com/CrociDB/bulletty), a TUI RSS/ATOM feed reader app for the terminal, in Rust
- - Building a programmable guitar pedal based on GuitarML's [FunBox](https://github.com/GuitarML/FunBox)
+ - Building some guitar effects for my custom build of GuitarML's [FunBox](https://github.com/GuitarML/FunBox)
 
-### Art
+<!--### Art
 
- - Studying drawing. I recently started learning to draw and am now enrolled in an online course taught by a highly experienced Brazilian comic book artist and illustrator, Rafael Coutinho.
+ - Studying drawing. I recently started learning to draw and am now enrolled in an online course taught by a highly experienced Brazilian comic book artist and illustrator, Rafael Coutinho. -->
 
  <!-- - Working on a small Android app to add color frame to photos that I can post on social media. I know there's a plethora of apps that do exactly that, but the one I really liked using is not supported anymore, so I decided to create my own with Flutter. Will probably release that for free with ads when it's ready. -->
 
@@ -23,4 +23,4 @@ date: 2025-08-08
 
 ---
 
-Last edit: **08-08-2025**
+Last edit: **2025-12-10**
