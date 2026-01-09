@@ -1,4 +1,5 @@
 baseURL = 'https://crocidb.com/'
+
 languageCode = 'en-us'
 title = "Bruno Croci"
 
@@ -24,7 +25,7 @@ canonifyurls = true
   homeIntro = """Hi. I'm **Bruno Croci**, also known online as **crocidb**, programmer and hobbist artist based in Düsseldorf, Germany. I'm a tinkerer who loves to create stuff. My main interestest are *video games*, *music*, *photography* and *programming* in general. 
 
 Go to [/about](/about) for more info, [/now](/now) for what I'm currently up to, or check [Things I've Made](/things-ive-made) for a list of projects."""
-  news = "I'll be at FOSDEM 2026 in Brussels!"
+  news = "📰 I'll be at FOSDEM 2026 in Brussels!"
   keywords = "programming, gamedev, hacking, coding, photography, thoughts"
   
   google_analytics_id = "G-E3L73E2DVK"

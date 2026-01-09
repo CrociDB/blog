@@ -1,5 +1,5 @@
 ---
-title: "Things I've Made"
+title: "🔨 Things I've Made"
 description: "Just a page to show off some of the stuff I've made"
 date: 2024-05-30
 ---

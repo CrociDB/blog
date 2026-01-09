@@ -1,5 +1,5 @@
 ---
-title: "Now"
+title: "⌛ Now"
 date: 2025-12-10
 ---
 

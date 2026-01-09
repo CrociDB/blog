@@ -1,5 +1,5 @@
 ---
-title: "My Analog Cameras"
+title: "📷 My Analog Cameras"
 description: "My collection of film cameras with descriptions."
 date: 2022-10-17T10:03:49+02:00
 thumb: "images/cameras.jpg"
