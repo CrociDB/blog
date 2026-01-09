@@ -1,9 +1,9 @@
 ---
 title: "⌛ Now"
-date: 2025-12-10
+date: 2026-01-09
 ---
 
- > Now page is inspired by [Derek Sivers](https://sive.rs/).
+ <!-- > Now page is inspired by [Derek Sivers](https://sive.rs/). -->
 
 ### Tech and Development
 
@@ -11,16 +11,20 @@ date: 2025-12-10
  - Working on [bulletty](https://github.com/CrociDB/bulletty), a TUI RSS/ATOM feed reader app for the terminal, in Rust
  - Building some guitar effects for my custom build of GuitarML's [FunBox](https://github.com/GuitarML/FunBox)
 
+### Events
+
+ - Getting ready to go to [FOSDEM 2026](https://fosdem.org/2026/about/), in Brussels. If you're there and would like to talk, drop me a message on [Mastodon](https://mastodon.gamedev.place/@crocidb) or [Bluesky](https://crocidb.bsky.social).
+
 <!--### Art
 
  - Studying drawing. I recently started learning to draw and am now enrolled in an online course taught by a highly experienced Brazilian comic book artist and illustrator, Rafael Coutinho. -->
 
  <!-- - Working on a small Android app to add color frame to photos that I can post on social media. I know there's a plethora of apps that do exactly that, but the one I really liked using is not supported anymore, so I decided to create my own with Flutter. Will probably release that for free with ads when it's ready. -->
 
-<!-- ### Music -->
+### Music
 
-<!-- Finishing a music project. It's an instrumental psychedelic rock with some influences from brazilian music. I composed, recorded all instruments, produced and mixed everything. It's been a really interesting journey. I'll blog about it when I'm done. -->
+Finishing a music project. It's an instrumental psychedelic rock with some influences from brazilian music. I composed, recorded all instruments, produced and mixed everything. It's been a really interesting journey. I'll blog about it when I'm done.
 
 ---
 
-Last edit: **2025-12-10**
+Last edit: **2026-01-09**
